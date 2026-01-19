@@ -32,7 +32,7 @@ export default function Navbar() {
         <nav className="hidden md:flex items-center gap-8">
           {[
             { name: "Nia ya sala", href: "/niayasala" },
-            { name: "Historia yetu", href: "/hostoriayetu" },
+            { name: "Historia yetu", href: "/historiayetu" },
             { name: "EYM", href: "/eym" },
             { name: "Habari", href: "/Habari" },
             { name: "Mawasiliano", href: "/contact" },
@@ -72,7 +72,7 @@ export default function Navbar() {
             <nav className="mt-10 flex flex-col gap-6">
               {[
                 { name: "Nia ya sala", href: "/niayasala" },
-            { name: "Historia yetu", href: "/hostoriayetu" },
+            { name: "Historia yetu", href: "/historiayetu" },
             { name: "EYM", href: "/eym" },
             { name: "Habari", href: "/Habari" },
             { name: "Mawasiliano", href: "/contact" },
