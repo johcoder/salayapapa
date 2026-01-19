@@ -1,5 +1,6 @@
 // components/AboutSalayaPapa.tsx
 "use client";
+
 import { motion } from "framer-motion";
 import Image from "next/image";
 
@@ -16,15 +17,28 @@ export default function AboutSalayaPapa() {
           viewport={{ once: true }}
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            About SalayaPapa
+            Sala ya Papa ni Nini?
           </h2>
+
           <p className="text-gray-600 leading-relaxed mb-4">
-            We are the Pope’s Worldwide Prayer Network, a mission at the heart of the Church. Our purpose is simple: to pray for and address the challenges facing humanity and the mission of the Church, guided by the Pope’s monthly intentions.
-Through prayer, service, and spiritual formation, we connect hearts across continents, growing in compassion and solidarity. But this is more than just prayer—it’s a mission to live the Gospel daily, transforming our lives and the world through a journey we call “The Way of the Heart.
+            Sala ya Papa ni mtandao wa kimataifa wa waumini ulio katikati ya maisha
+            ya Kanisa Katoliki. Dhamira yake kuu ni kuwaunganisha waamini kote
+            duniani katika sala na utume wa Kanisa, wakiongozwa na nia za kila
+            mwezi za Baba Mtakatifu (Papa).
           </p>
+
+          <p className="text-gray-600 leading-relaxed mb-4">
+            Kupitia sala, huduma, na malezi ya kiroho, tunajenga mioyo yenye
+            huruma na mshikamano, tukikabili changamoto za binadamu na za Kanisa
+            kwa pamoja. Huu si mwito wa kusali tu, bali ni safari ya kubadilisha
+            maisha kwa kuishi Injili kila siku.
+          </p>
+
           <p className="text-gray-600 leading-relaxed mb-6">
-            Our mission is to empower communities by bringing essential services
-            closer to everyone through innovation, reliability, and ease of use.
+            Safari hii tunaiita <span className="font-medium">“Njia ya Moyo”</span> — 
+            njia ya ndani inayotuongoza kumkaribia Mungu zaidi, kumjali jirani,
+            na kushiriki kikamilifu katika utume wa Kanisa kwa ajili ya ulimwengu
+            wenye matumaini na amani.
           </p>
 
           <motion.button
@@ -32,7 +46,7 @@ Through prayer, service, and spiritual formation, we connect hearts across conti
             whileTap={{ scale: 0.95 }}
             className="px-6 py-3 rounded-xl bg-black text-white font-medium shadow-lg"
           >
-            Learn More
+            Jifunze Zaidi
           </motion.button>
         </motion.div>
 
@@ -46,8 +60,8 @@ Through prayer, service, and spiritual formation, we connect hearts across conti
           className="relative w-full h-80 md:h-105 rounded-3xl overflow-hidden shadow-2xl cursor-pointer"
         >
           <Image
-            src="/popepraywithpeople.jpeg"  // put image in /public
-            alt="SalayaPapa"
+            src="/popepraywithpeople.jpeg"
+            alt="Sala ya Papa"
             fill
             className="object-cover"
           />
