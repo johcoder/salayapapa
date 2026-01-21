@@ -36,7 +36,7 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
           className="text-4xl md:text-6xl font-bold mb-4 drop-shadow-lg"
         >
-          Mwezi january 2026  
+          Mwezi Januari 2026  
         </motion.h2>
 
         <motion.p
@@ -45,7 +45,7 @@ export default function Hero() {
           transition={{ delay: 0.3, duration: 0.8 }}
           className="text-lg md:text-xl mb-8 max-w-2xl mx-auto"
         >
-          Kwa ajili ya Kusali Kwa kutumia Neno la Mungu
+          Kwa ajili ya kusali kwa kutumia Neno la Mungu
         </motion.p>
 
         <motion.div
