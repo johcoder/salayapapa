@@ -18,7 +18,7 @@ export default function Navbar() {
        {/* Logo */}
 <Link href="/" className="flex items-center h-full py-4">
   <Image
-    src="/logo.png"
+    src="/logo3.png"
     alt="RMOP Tanzania Logo"
     width={400}
     height={130}
