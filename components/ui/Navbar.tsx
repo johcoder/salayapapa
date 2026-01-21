@@ -18,10 +18,10 @@ export default function Navbar() {
        {/* Logo */}
 <Link href="/" className="flex items-center h-full py-4">
   <Image
-    src="/Logo RMOP Tanzania-01 (3).png"
+    src="/logo.png"
     alt="RMOP Tanzania Logo"
-    width={200}
-    height={30}
+    width={400}
+    height={130}
     className="object-contain max-h-30"
     priority
   />
