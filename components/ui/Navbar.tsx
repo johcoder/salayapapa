@@ -16,7 +16,7 @@ export default function Navbar() {
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4">
 
        {/* Logo */}
-<Link href="/" className="flex items-center h-full py-2">
+<Link href="/" className="flex items-center h-full py-4">
   <Image
     src="/Logo RMOP Tanzania-01 (3).png"
     alt="RMOP Tanzania Logo"
@@ -34,7 +34,7 @@ export default function Navbar() {
             { name: "Historia yetu", href: "/historiayetu" },
             { name: "EYM", href: "/eym" },
             { name: "Habari", href: "/Habari" },
-            { name: "Mawasiliano", href: "/contact" },
+            { name: "Mawasiliano", href: "/mawasiliano" },
           ].map((item) => (
             <Link
               key={item.name}

@@ -9,7 +9,7 @@ const links = [
   { name: "Historia yetu", href: "/historiayetu" },
   { name: "EYM", href: "/eym" },
   { name: "Habari", href: "/Habari" },
-  { name: "Mawasiliano", href: "/contact" },
+  { name: "Mawasiliano", href: "/mawasiliano" },
 ];
 
 export default function Footer() {
