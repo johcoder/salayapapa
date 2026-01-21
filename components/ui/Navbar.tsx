@@ -12,21 +12,20 @@ import { Menu } from "lucide-react"
 
 export default function Navbar() {
   return (
-    <header className="sticky top-0 z-50 border-b bg-white shadow-sm">
+    <header className="sticky  top-0 z-50 border-b bg-white shadow-sm">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4">
 
-        {/* Logo */}
-        <Link href="/" className="flex items-center">
-          <div className="relative h-8 w-45">
-            <Image
-              src="/Logo RMOP Tanzania-01 (3).png"
-              alt="RMOP Tanzania Logo"
-              fill
-              className="object-contain"
-              priority
-            />
-          </div>
-        </Link>
+       {/* Logo */}
+<Link href="/" className="flex items-center h-full py-2">
+  <Image
+    src="/Logo RMOP Tanzania-01 (3).png"
+    alt="RMOP Tanzania Logo"
+    width={200}
+    height={30}
+    className="object-contain max-h-30"
+    priority
+  />
+</Link>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-8">

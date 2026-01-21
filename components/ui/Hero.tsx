@@ -28,8 +28,16 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
           className="text-4xl md:text-6xl font-bold mb-4 drop-shadow-lg"
         >
-          Nia ya sala ya papa ya January 2026
+          Nia ya Sala ya Baba Mtakatifu  
         </motion.h1>
+        <motion.h2
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="text-4xl md:text-6xl font-bold mb-4 drop-shadow-lg"
+        >
+          Mwezi january 2026  
+        </motion.h2>
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -37,7 +45,7 @@ export default function Hero() {
           transition={{ delay: 0.3, duration: 0.8 }}
           className="text-lg md:text-xl mb-8 max-w-2xl mx-auto"
         >
-          For prayer with the Word of God
+          Kwa ajili ya Kusali Kwa kutumia Neno la Mungu
         </motion.p>
 
         <motion.div

@@ -9,7 +9,7 @@ const cards = [
     description:
       "Angalia video ya Baba Mtakatifu akiongoza Nia ya Sala ya mwezi huu.",
     image: "/popesvideologo.jpg",
-    link: "/video-ya-papa",
+    link: "https://thepopevideo.org/",
     logo: "/pope-logo.png", // optional logo overlay
   },
   {
@@ -17,7 +17,7 @@ const cards = [
     description:
       "Jiunge katika huduma za sala, kushiriki matendo ya ibada na maombi ya kila siku.",
     image: "/clicktopray.jpg",
-    link: "/pray-service",
+    link: "https://www.popesprayer.va/pray/#clicktopray",
   },
   {
     title: "Click to Pray Rosary",
@@ -32,7 +32,7 @@ export default function InteractiveCards() {
   return (
     <section className="py-20 px-6 md:px-12 bg-gray-50">
       <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">
-        Ungana na Sala za Mtandaoni
+        Ungana Nasi kwa Kusali Mtandaoni
       </h2>
 
       <div className="max-w-7xl mx-auto">
@@ -48,21 +48,11 @@ export default function InteractiveCards() {
                 <Image
                   src={card.image}
                   alt={card.title}
-                  fill
+                  width={456}
+                  height={45}
                   className="object-cover"
                 />
-                {/* Logo overlay for first card */}
-                {card.logo && (
-                  <div className="absolute top-4 left-4 w-16 h-16 bg-white rounded-full flex items-center justify-center p-2 shadow-lg">
-                    <Image
-                      src={card.logo}
-                      alt="Logo"
-                      width={48}   // adjusted size
-                      height={48}  // adjusted size
-                      className="object-contain"
-                    />
-                  </div>
-                )}
+               
               </div>
               <div className="p-6 flex-1 flex flex-col">
                 <h3 className="text-xl font-bold mb-2 text-gray-900">
