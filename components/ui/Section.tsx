@@ -17,7 +17,7 @@ export default function AboutSalayaPapa() {
           viewport={{ once: true }}
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Sala ya Papa ni Nini?
+            Mtandao wa sala ya Baba Mtakatifu Ulimwenguni ni nini?
           </h2>
 
           <p className="text-gray-600 leading-relaxed mb-4">
