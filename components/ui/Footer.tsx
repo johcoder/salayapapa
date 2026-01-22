@@ -67,7 +67,7 @@ export default function Footer() {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="px-6 py-3 rounded-xl bg-white text-black font-medium shadow-lg"
+              className="px-6 py-3 rounded-xl bg-amber-600 text-black font-medium shadow-lg"
             >
               Jiunge
             </motion.button>

@@ -131,12 +131,6 @@ export default function NiaZaSalaPage() {
             </motion.div>
           ))}
         </div>
-
-        {/* Footer */}
-        <div className="text-center mt-16 text-slate-500 text-sm">
-          <p>Papa Leo XIV – Vatikan, Julai 1, 2025</p>
-          <p>Imetafsiriwa kutoka Kiitaliano</p>
-        </div>
       </div>
     </div>
   );

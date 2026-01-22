@@ -40,7 +40,7 @@ export default function Navbar() {
               key={item.name}
               href={item.href}
               className="relative text-sm font-medium text-black transition-colors duration-200 hover:text-gray-600
-              after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-0 after:bg-black
+              after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-0 after:bg-amber-600
               after:transition-all after:duration-300 hover:after:w-full"
             >
               {item.name}
@@ -49,7 +49,7 @@ export default function Navbar() {
 
           <Button
             size="sm"
-            className="bg-black text-white hover:bg-gray-800 transition-colors"
+            className="bg-amber-600 text-white hover:bg-gray-800 transition-colors"
           >
             Jiunge
           </Button>

@@ -1,5 +1,6 @@
 "use client";
 
+import NiaYaSalaCard from "@/components/ui/Niayasalacard";
 import { motion } from "framer-motion";
 
 export default function NiaZaSalaPage() {
@@ -124,6 +125,7 @@ export default function NiaZaSalaPage() {
           ))}
         </div>
       </section>
+      <NiaYaSalaCard title={"Nia ya sala "} description={"ungana nasi kwa kusoma au kudownload Nia ya sala"} viewLink={"/niazasala2026"} pdfLink={"/pdf/NIA ZA SALA ZA BABA MTAKATIFU 2026.pdf"} />
     </main>
   );
 }
