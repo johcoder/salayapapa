@@ -61,13 +61,13 @@ export default function EYMPage() {
       {/* Hero Section */}
       <div className="relative w-full h-[50vh] md:h-[60vh] lg:h-[80vh]">
         <img
-          src="/popeleo3.jpg"
+          src="/eymlogo.jpg"
           alt="EYM Hero"
           className="absolute inset-0 w-full h-full object-cover object-center md:object-top"
         />
         <div className="absolute inset-0 bg-black/40 flex items-center justify-center px-4">
-          <h1 className="text-3xl md:text-5xl font-bold text-amber-600 text-center">
-            EYM-VWN (Eucharistic Youth Movement, Vijana Wana-Ekaristia)
+          <h1 className="text-2xl md:text-5xl font-bold text-white align-text-bottom">
+           Vijana Wana-Ekaristia
           </h1>
         </div>
       </div>
