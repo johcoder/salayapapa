@@ -3,6 +3,8 @@
 import { motion, AnimatePresence, useInView } from "framer-motion"
 import { useRef, useState, useEffect } from "react"
 import { ChevronDown, Heart, Cross } from "lucide-react"
+import Link from "next/link"
+import CTAButton from "./CTAbutton"
 
 function AccordionItem({
   title,
@@ -107,7 +109,7 @@ export default function AboutPrayerNetworkAccordion() {
             Utume huu ulianzishwa mwaka 1884 ukiwa unajulikana kama “Utume wa Sala”
             (Apostleship of Prayer), ukiwa na lengo la kuwawezesha waamini kushiriki kikamilifu katika
             kazi ya kimisionari hata pale wasiposafiri mbali na nyumbani. Waamini walihimizwa
-            kumshuhudia Kristo, kueneza na kudumisha maadili ya Kiinjili na nguvu ya Sakramenti.
+            kumshuhudia Kristo, kueneza na kudumisha maadili ya Kiinjili na nguvu ya Sakrament <CTAButton href={"/historiayetu"} text={"soma zaidi"} />
           </AccordionItem>
 
           <AccordionItem

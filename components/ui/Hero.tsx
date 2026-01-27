@@ -9,6 +9,7 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import { useRef, useState, useEffect } from "react";
+import CTAButton from "./CTAbutton";
 
 const slides = [
   {
@@ -140,19 +141,7 @@ export default function Hero() {
           transition={{ delay: 0.6, duration: 0.5 }}
           className="flex justify-center mt-10"
         >
-          <Link
-            href="https://www.popesprayer.va/praywiththepope/"
-            target="_blank"
-          >
-            <motion.button
-              whileHover={{ scale: 1.08, y: -2 }}
-              whileTap={{ scale: 0.95 }}
-              className="px-7 py-3 rounded-xl bg-amber-600 font-semibold 
-                         shadow-lg hover:shadow-2xl transition-all duration-300"
-            >
-              Sali na Papa
-            </motion.button>
-          </Link>
+          <CTAButton href={"https://www.popesprayer.va/praywiththepope/"} text={"Sali na Papa"} />
         </motion.div>
       </div>
     </section>
