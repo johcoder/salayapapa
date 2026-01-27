@@ -20,7 +20,7 @@ export default function MtandaoWaSalaPage() {
           className="relative z-10 max-w-4xl text-center"
         >
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            Mtandao wa Sala wa Baba Mtakatifu Duniani
+            Mtandao wa Sala wa Baba Mtakatifu Ulimwenguni
           </h1>
           <p className="text-lg md:text-xl text-gray-200">
             Ushirika wa Kipapa unaowaunganisha Wakatoliki kote duniani

@@ -51,7 +51,7 @@ export default function ImageDescriptionSlider({ slides }: Props) {
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.4 }}
-            className="text-amber-600 text-lg md:text-xl font-medium leading-relaxed text-center md:text-left"
+            className="text-amber-600 text-4xl md:text-xl font-medium leading-relaxed text-center md:text-left"
           >
             {slides[index].description}
           </motion.p>
