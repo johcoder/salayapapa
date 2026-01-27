@@ -23,9 +23,10 @@ export default function NiaZaSalaPage() {
             Nia ya Sala ya Baba Mtakatifu
           </h1>
           <p className="text-lg md:text-xl text-gray-200">
-            Kuunganisha sala na matendo kwa ajili ya changamoto za wanadamu
-            na utume wa Kanisa – kila mwezi, kwa sauti moja duniani kote.
+            Kuunganisha sala na matendo kukabili  changamoto za wanadamu
+            na utume wa Kanisa
           </p>
+          <p className="text-lg md:text-xl"> Kila mwezi-Pamoja na Papa -Sauti Moja -Ulimwenguni Pote</p>
         </motion.div>
       </section>
 

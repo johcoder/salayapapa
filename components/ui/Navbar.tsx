@@ -30,10 +30,11 @@ export default function Navbar() {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-8">
           {[
+            {name:"karibu",href:"/"},
             { name: "Nia ya sala", href: "/niayasala" },
             { name: "Historia yetu", href: "/historiayetu" },
             { name: "EYM", href: "/eym" },
-            { name: "Habari", href: "/Habari" },
+            { name: "Waraka Wa Sala", href: "/warakawasala" },
             { name: "Mawasiliano", href: "/mawasiliano" },
           ].map((item) => (
             <Link
@@ -70,8 +71,8 @@ export default function Navbar() {
           <SheetContent side="right" className="bg-white">
             <nav className="mt-10 flex flex-col gap-6">
               {[
-                { name: "Nia ya sala", href: "/niayasala" },
-            { name: "Historia yetu", href: "/historiayetu" },
+                { name: "Nia ya Sala", href: "/niayasala" },
+            { name: "Historia Yetu", href: "/historiayetu" },
             { name: "EYM", href: "/eym" },
             { name: "Habari", href: "/Habari" },
             { name: "Mawasiliano", href: "/contact" },

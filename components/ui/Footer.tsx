@@ -6,9 +6,9 @@ import Link from "next/link";
 
 const links = [
   { name: "Nia ya sala", href: "/niayasala" },
-  { name: "Historia yetu", href: "/historiayetu" },
+  { name: "Historia Yetu", href: "/historiayetu" },
   { name: "EYM", href: "/eym" },
-  { name: "Habari", href: "/Habari" },
+  { name: "Waraka Wa Sala", href: "/warakawasala" },
   { name: "Mawasiliano", href: "/mawasiliano" },
 ];
 
