@@ -15,7 +15,7 @@ const slides = [
   {
     type: "motto", // 👈 first slide type
     headline: "Mtandao wa Sala wa Baba Mtakatifu Ulimwenguni",
-    mottos: ["UHIRIKA WA KIPAPA", "MTANDAO WA WANAOSALI", "MITUME PALE TULIPO"],
+    mottos: ["USHIRIKA WA KIPAPA", "MTANDAO WA WANAOSALI", "MITUME PALE TULIPO"],
   },
   {
     type: "normal",
