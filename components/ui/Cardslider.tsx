@@ -24,7 +24,7 @@ const cards = [
     description:
       "Ungana nasi kwa Sala ya Rosari kila siku na tafakari Nia za Papa.",
     image: "/erosary.jpg",
-    link: "/pray-rosary",
+    link: "https://clicktopray.org/eRosary/3",
   },
 ];
 

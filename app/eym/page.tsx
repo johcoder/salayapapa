@@ -12,11 +12,11 @@ interface AccordionItem {
 
 const accordionData: AccordionItem[] = [
   {
-    title: "Utangulizi wa EYM-VWN",
+    title: "Utangulizi ",
     content: `EYM-VWN (Eucharistic Youth Movement, Vijana Wana-Ekaristia) ni tawi la vijana la Mtandao wa Sala wa Baba Mtakatifu Ulimwengu. VWE ni ushirika uliojikita katika malezi na makuzi ya Kikristo kwa vijana na watoto wenye umri kati ya miaka 5 hadi 25. Utume huu ulianzishwa mwaka 1915 kama Kongamano la Ekaristi (kwa vijana) na kuundwa upya mwaka 1962 kama Ushirika wa Vijana wa Kiekaristia (Eucharist Youth Movement, EYM). Ushirika huu unatoa kwa vijana njia ya malezi ya kiutu na kiimani.`,
   },
   {
-    title: "Nguzo au Dhana za Msingi",
+    title: "Dhana za Msingi",
     content: `EYM-VWN hunawahimiza wanachama wake kujijengea urafiki na Yesu Kristo kupitia nguzo tatu kuu au “dhana za msingi”, ambazo wanaziishi katika maisha yao ya kawadia, kila siku.`,
     pillars: [
       {
@@ -40,13 +40,12 @@ const accordionData: AccordionItem[] = [
     ],
   },
   {
-    title: "Ueneaji wa EYM-VWN",
-    content: `EYM-VWN uko katika nchi 59, na unajumuisha takriban watoto na vijana milioni 1.7 wenye umri wa miaka 5 hadi 25. Katika hao 80% hushiriki kupitia parokia, wakati 20% hushiriki kupitia shule na vyuo wanaposoma.`,
+    title: "Wana Ekaristia Ulimwenguni ",
+    content: `EYM-VWN uko katika nchi 59, na unajumuisha takriban watoto na vijana milioni 1.7 wenye umri wa miaka 5 hadi 25. Katika hao 80% hushiriki kupitia parokia, wakati 20% hushiriki kupitia shule na vyuo wanaposoma.
+    Shirika la Yesu (Jesuit Fathers) linajihusisha na 25% ya walio katika utume huu, na makundi ya kitawa kama ya Religious of Jesus and Mary, Company of Mary, Esclavas del Corazón de Jesús, Siervas del Corazón de Jesús, Marist Brothers, Brothers of Christian Schools, n.k., pamoja na parokia katika majimbo mbalimbali wanajihusisha na 75% nyingine za wanachama.
+    `,
   },
-  {
-    title: "Shirika la Yesu na Wakubwa wa Kidini",
-    content: `Shirika la Yesu (Jesuit Fathers) linajihusisha na 25% ya walio katika utume huu, na makundi ya kitawa kama ya Religious of Jesus and Mary, Company of Mary, Esclavas del Corazón de Jesús, Siervas del Corazón de Jesús, Marist Brothers, Brothers of Christian Schools, n.k., pamoja na parokia katika majimbo mbalimbali wanajihusisha na 75% nyingine za wanachama.`,
-  },
+  
 ];
 
 export default function EYMPage() {

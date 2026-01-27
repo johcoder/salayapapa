@@ -1,5 +1,6 @@
 "use client";
 
+import DailyOfferingPrayer from "@/components/ui/DailyOfferingPrayer";
 import NiaYaSalaCard from "@/components/ui/Niayasalacard";
 import Slider from "@/components/ui/Slider";
 import { motion } from "framer-motion";
@@ -71,7 +72,7 @@ export default function NiaZaSalaPage() {
 
       {/* SLIDER */}
       <Slider />
-
+      <DailyOfferingPrayer />
       {/* PATHS */}
       <section className="bg-gray-50 py-20 px-6 md:px-12">
         <div className="max-w-6xl mx-auto">
