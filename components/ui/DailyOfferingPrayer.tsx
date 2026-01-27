@@ -8,14 +8,22 @@ export default function DailyOfferingPrayer() {
 
   return (
     <>
-      {/* BUTTON */}
-      <button
-        onClick={() => setOpen(true)}
-        className="px-6 py-3 rounded-xl bg-amber-600 text-white font-semibold 
-                   shadow-lg hover:bg-amber-700 transition"
-      >
-        SALA YA MAJITOLEO YA KILA SIKU
-      </button>
+      {/* CENTERED INTRO + BUTTON */}
+      <div className="flex flex-col items-center justify-center gap-4 text-center">
+        {/* Title text */}
+        <p className="text-xl md:text-2xl font-bold text-amber-600">
+          SALA YA MAJITOLEO YA KILA SIKU
+        </p>
+
+        {/* Action button */}
+        <button
+          onClick={() => setOpen(true)}
+          className="px-8 py-3 rounded-xl bg-amber-600 text-white font-semibold
+                     shadow-lg hover:bg-amber-700 transition"
+        >
+          BOFYA KUSALI
+        </button>
+      </div>
 
       {/* MODAL */}
       <AnimatePresence>
@@ -41,7 +49,7 @@ export default function DailyOfferingPrayer() {
                 ✕
               </button>
 
-              {/* Title */}
+              {/* Modal Title */}
               <h2 className="text-2xl font-bold text-amber-600 mb-8 text-center">
                 SALA YA MAJITOLEO YA KILA SIKU
               </h2>
