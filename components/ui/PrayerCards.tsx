@@ -36,7 +36,7 @@ export default function PrayerCards() {
         symbol={
           <div className="w-20 h-20 relative">
             <Image
-              src="/asubuhi.jpg"
+              src="/sunrise.jpg"
               alt="Morning Sunrise"
               fill
               className="object-contain"
@@ -52,7 +52,7 @@ export default function PrayerCards() {
         symbol={
           <div className="w-20 h-20 relative">
             <Image
-              src="/mchana.jpg"
+              src="/noon.jpg"
               alt="Afternoon Sun"
               fill
               className="object-contain"
@@ -68,7 +68,7 @@ export default function PrayerCards() {
         symbol={
           <div className="w-20 h-20 relative">
             <Image
-              src="/jion.jpg"
+              src="/sunset.jpg"
               alt="Evening Moon"
               fill
               className="object-contain"

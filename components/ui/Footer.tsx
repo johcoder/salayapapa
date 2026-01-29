@@ -3,9 +3,11 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 
 const links = [
-  { name: "Nia ya sala", href: "/niayasala" },
+  { name: "Karibu", href: "/" },
+  { name: "Nia ya Sala", href: "/niayasala" },
   { name: "Historia Yetu", href: "/historiayetu" },
   { name: "EYM", href: "/eym" },
   { name: "Waraka Wa Sala", href: "/warakawasala" },
@@ -14,7 +16,7 @@ const links = [
 
 export default function Footer() {
   return (
-    <footer className="relative mt-40">
+    <footer className="relative mt-00">
       {/* Clipped Background */}
       <div
         className="absolute inset-0 bg-black"
@@ -31,17 +33,27 @@ export default function Footer() {
         className="relative z-10 max-w-7xl mx-auto px-6 py-24 text-white"
       >
         <div className="grid grid-cols-1 md:grid-cols-3 gap-14">
-          
+
           {/* Brand */}
           <div>
-            <h3 className="text-2xl font-bold mb-3">RMOP Tanzania</h3>
+            {/* Logo */}
+            <Image
+              src="/logo3.png"
+              alt="RMOP Tanzania Logo"
+              width={400}
+              height={130}
+              className="object-contain mb-4"
+            />
+
+            <h3 className="text-2xl font-bold mb-3">Mtandao wa sala ya Papa  Tanzania</h3>
+
             <p className="text-white/70 leading-relaxed">
               Tunajenga jumuiya imara ya vijana kupitia sala, imani, na huduma.
               Jukwaa hili linaunganisha watu na safari ya kiroho kwa njia ya kisasa.
             </p>
           </div>
 
-          {/* Links (from Navbar) */}
+          {/* Links */}
           <div>
             <h4 className="font-semibold mb-4">Kurasa</h4>
             <ul className="space-y-3 text-white/70">
@@ -49,7 +61,7 @@ export default function Footer() {
                 <motion.li
                   key={item.name}
                   whileHover={{ x: 8 }}
-                  className="transition cursor-pointer hover:text-white"
+                  className="transition hover:text-white"
                 >
                   <Link href={item.href}>{item.name}</Link>
                 </motion.li>
@@ -61,7 +73,7 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-4">Jiunge Nasi</h4>
             <p className="text-white/70 mb-5">
-              Kuwa sehemu ya harakati ya vijana katika imani na matumaini.
+              Kuwa sehemu ya imani na matumaini.
             </p>
 
             <motion.button
@@ -75,7 +87,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-20 border-t border-white/20 pt-6 text-center text-white/50 text-sm">
-          © {new Date().getFullYear()} RMOP Tanzania. Haki zote zimehifadhiwa.
+          © {new Date().getFullYear()} Mtandao wa sala ya Papa Tanzania. Haki zote zimehifadhiwa.
         </div>
       </motion.div>
     </footer>
