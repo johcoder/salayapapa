@@ -1,4 +1,5 @@
 export type Waraka = {
+  id:string,
   month: string
   year: number
   title: string
@@ -9,6 +10,7 @@ export type Waraka = {
 
 export const warakaList: Waraka[] = [
   {
+    id:"1",
     month: "December",
     year: 2025,
     title: "Waraka wa Sala – December 2025",
@@ -16,6 +18,7 @@ export const warakaList: Waraka[] = [
     pdfUrl: "/waraka/2026-01.pdf",
   },
   {
+    id:"2",
     month: "Januari",
     year: 2026,
     title: "Waraka wa Sala – januari 2026",
@@ -24,6 +27,7 @@ export const warakaList: Waraka[] = [
     isCurrent: true,
   },
   {
+    id:"3",
     month: "November",
     year: 2025,
     title: "Waraka wa Sala – November 2025",

@@ -45,7 +45,7 @@ export default function Footer() {
               className="object-contain mb-4"
             />
 
-            <h3 className="text-2xl font-bold mb-3">Mtandao wa sala ya Papa  Tanzania</h3>
+            <h3 className="text-2xl font-bold mb-3">Mtandao wa Sala wa Baba Mtakatifu Ulimwenguni</h3>
 
             <p className="text-white/70 leading-relaxed">
               Tunajenga jumuiya imara ya vijana kupitia sala, imani, na huduma.
@@ -87,7 +87,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-20 border-t border-white/20 pt-6 text-center text-white/50 text-sm">
-          © {new Date().getFullYear()} Mtandao wa sala ya Papa Tanzania. Haki zote zimehifadhiwa.
+          © {new Date().getFullYear()} Mtandao wa Sala wa Baba Mtakatifu Ulimwenguni. Haki zote zimehifadhiwa.
         </div>
       </motion.div>
     </footer>
