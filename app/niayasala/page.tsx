@@ -31,7 +31,7 @@ export default function NiaZaSalaPage() {
           </h1>
 
           <p className="text-lg md:text-xl text-gray-200 mb-2">
-            Kuunganisha sala na matendo kukabili changamoto za wanadamu na utume
+            Kuunganisha Sala na matendo kukabili changamoto za wanadamu na utume
             wa Kanisa
           </p>
 
@@ -64,7 +64,7 @@ export default function NiaZaSalaPage() {
           Ulimwenguni. Nia hizi huonesha jinsi Kanisa analoliongoza
           linavyowajali sana wanadamu na Utume wa Kristo lililokabidhiwa. Nia
           hizi ni mwito kwa watu wote ulimwenguni kufanya matendo mema.
-          Zinatuelekeza tunaosali kuziweka sala zetu katika matendo yenye mguso
+          Zinatuelekeza tunaosali kuziweka Sala zetu katika matendo yenye mguso
           chanya kwa maisha ya watu, na kuutazama ulimwengu kwa moyo wa huruma
           wa Kristo.
         </motion.p>
@@ -84,7 +84,7 @@ export default function NiaZaSalaPage() {
             {[
               {
                 title: "Ushiriki wa Wazi",
-                text: "Uko wazi kwa kila mbatizwa. Inahusisha kuingiza Nia za Sala za Papa katika sala za kila siku na kushiriki hasa Ijumaa ya Kwanza ya kila mwezi. Inaweza kufanywa na watu binafsi au vikundi kama wanakwaya, watumishi wa altare, wanafunzi, na jumuiya mbalimbali.",
+                text: "Uko wazi kwa kila mbatizwa. Inahusisha kuingiza Nia za Sala za Papa katika Sala za kila siku na kushiriki hasa Ijumaa ya Kwanza ya kila mwezi. Inaweza kufanywa na watu binafsi au vikundi kama wanakwaya, watumishi wa altare, wanafunzi, na jumuiya mbalimbali.",
               },
               {
                 title: "Uanachama wa Utume",
@@ -115,11 +115,11 @@ export default function NiaZaSalaPage() {
           {[
             {
               title: "Mtu Binafsi",
-              text: "Kuishi nyakati tatu za sala kila siku: Asubuhi (sala ya kujitoa), Mchana, na Usiku. Lengo ni kukua katika urafiki wa karibu na Bwana, kwa pamoja na Mama Maria.",
+              text: "Kuishi nyakati tatu za Sala kila siku: Asubuhi (Sala ya kujitoa), Mchana, na Usiku. Lengo ni kukua katika urafiki wa karibu na Bwana, kwa pamoja na Mama Maria.",
             },
             {
               title: "Kikundi/Jumuiya",
-              text: "Jumuiya za parokia, shule, vyuo au vikundi vya kitume hushiriki sala, malezi, mafungo na matendo ya huruma; pia huunga mkono Vijana Wana-Ekaristia (EYM).",
+              text: "Jumuiya za parokia, shule, vyuo au vikundi vya kitume hushiriki Sala, malezi, mafungo na matendo ya huruma; pia huunga mkono Vijana Wana-Ekaristia (EYM).",
             },
             {
               title: "Wakfu Binafsi",
@@ -145,8 +145,8 @@ export default function NiaZaSalaPage() {
 
       {/* CTA */}
       <NiaYaSalaCard
-        title="Nia ya sala"
-        description="Ungana nasi kwa kusoma au kudownload Nia ya sala"
+        title="Nia ya Sala"
+        description="Ungana nasi kwa kusoma au kudownload Nia ya Sala"
         viewLink="/niazasala2026"
         pdfLink="/pdf/NIA ZA SALA ZA BABA MTAKATIFU 2026.pdf"
       />

@@ -1,0 +1,326 @@
+# Query: sala
+# ContextLines: 1
+
+101 results - 18 files
+
+app\page.tsx:
+  4  import PrayerCards from "@/components/ui/PrayerCards";
+  5: import AboutSalayaPapa from "@/components/ui/Section";
+  6  import VideoYaPapaModal from "@/components/ui/Video";
+
+app\admin\Waraka\page.tsx:
+  17        <h1 className="text-3xl font-bold text-amber-600">
+  18:         Admin – Waraka wa Sala
+  19        </h1>
+
+app\eym\page.tsx:
+  15      title: "Utangulizi ",
+  16:     content: `EYM-VWN (Eucharistic Youth Movement, Vijana Wana-Ekaristia) ni tawi la vijana la Mtandao wa Sala wa Baba Mtakatifu Ulimwengu. VWE ni ushirika uliojikita katika malezi na makuzi ya Kikristo kwa vijana na watoto wenye umri kati ya miaka 5 hadi 25. Utume huu ulianzishwa mwaka 1915 kama Kongamano la Ekaristi (kwa vijana) na kuundwa upya mwaka 1962 kama Ushirika wa Vijana wa Kiekaristia (Eucharist Youth Movement, EYM). Ushirika huu unatoa kwa vijana njia ya malezi ya kiutu na kiimani.`,
+  17    },
+
+app\historiayetu\page.tsx:
+   4  
+   5: export default function MtandaoWaSalaPage() {
+   6    return (
+
+  22            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+  23:             Mtandao wa Sala wa Baba Mtakatifu Ulimwenguni
+  24            </h1>
+
+  27              kukabili changamoto za wanadamu na za utume wa Kanisa
+  28:             kwa njia ya sala na matendo mema.
+  29            </p>
+
+  42            Changamoto hizi hutolewa kila mwezi kwa Kanisa lote kupitia
+  43:           <span className="font-semibold text-amber-600"> Nia za Sala za Baba Mtakatifu</span>.
+  44            Kila Mkristo anaalikwa kuziombea na kuziishi kwa vitendo katika maisha ya kila siku,
+
+  59              <p className="leading-relaxed text-gray-700">
+  60:               Mtandao wa Sala wa Baba Mtakatifu ulianzishwa mwaka 1884 kama “Utume wa Sala”.
+  61                Ulizaliwa kutokana na hamu ya waamini kushiriki kazi ya kimisionari,
+  62                hata wale ambao hawangeweza kusafiri mbali. Suluhisho likawa ni kushiriki
+  63:               utume huo kwa njia ya sala na kwa kuuishi vema Ukristo wao katika maisha ya kila siku.
+  64              </p>
+
+  80              <p className="text-gray-700">
+  81:               Kutoka 1884 hadi leo, Mtandao wa Sala umekuwa daraja
+  82:               linalowaunganisha waamini duniani kote kuwa sauti moja ya sala,
+  83                mioyo iliyounganishwa kwa ajili ya Kristo na ulimwengu.
+
+  94                title: "Jukumu Letu",
+  95:               text: "Kutumia sala na matendo mema kama njia ya kukabiliana na changamoto za wanadamu na za utume wa Kanisa.",
+  96              },
+
+  98                title: "Lengo Letu",
+  99:               text: "Kuchangia katika kuutakatifuza ulimwengu kwa kuzisali na kuziishi nia za sala za Baba Mtakatifu.",
+  100              },
+
+app\niayasala\page.tsx:
+    3  import DailyOfferingPrayer from "@/components/ui/DailyOfferingPrayer";
+    4: import NiaYaSalaCard from "@/components/ui/Niayasalacard";
+    5  import Slider from "@/components/ui/Slider";
+
+    7  
+    8: export default function NiaZaSalaPage() {
+    9    return (
+
+   29            <h1 className="text-4xl md:text-5xl font-bold mb-4 drop-shadow-lg">
+   30:             Nia ya Sala ya Baba Mtakatifu
+   31            </h1>
+
+   33            <p className="text-lg md:text-xl text-gray-200 mb-2">
+   34:             Kuunganisha sala na matendo kukabili changamoto za wanadamu na utume
+   35              wa Kanisa
+
+   52          >
+   53:           Nia ya Sala
+   54          </motion.h2>
+
+   62          >
+   63:           Kila mwezi, Baba Mtakatifu anatoa nia ya Sala kwa Mtandao wake wa Sala
+   64            Ulimwenguni. Nia hizi huonesha jinsi Kanisa analoliongoza
+
+   66            hizi ni mwito kwa watu wote ulimwenguni kufanya matendo mema.
+   67:           Zinatuelekeza tunaosali kuziweka sala zetu katika matendo yenye mguso
+   68            chanya kwa maisha ya watu, na kuutazama ulimwengu kwa moyo wa huruma
+
+   79            <h2 className="text-3xl font-bold mb-10">
+   80:             Jinsi ya Kuishi kama Mtume wa Sala
+   81            </h2>
+
+   86                  title: "Ushiriki wa Wazi",
+   87:                 text: "Uko wazi kwa kila mbatizwa. Inahusisha kuingiza Nia za Sala za Papa katika sala za kila siku na kushiriki hasa Ijumaa ya Kwanza ya kila mwezi. Inaweza kufanywa na watu binafsi au vikundi kama wanakwaya, watumishi wa altare, wanafunzi, na jumuiya mbalimbali.",
+   88                },
+
+  117                title: "Mtu Binafsi",
+  118:               text: "Kuishi nyakati tatu za sala kila siku: Asubuhi (sala ya kujitoa), Mchana, na Usiku. Lengo ni kukua katika urafiki wa karibu na Bwana, kwa pamoja na Mama Maria.",
+  119              },
+
+  121                title: "Kikundi/Jumuiya",
+  122:               text: "Jumuiya za parokia, shule, vyuo au vikundi vya kitume hushiriki sala, malezi, mafungo na matendo ya huruma; pia huunga mkono Vijana Wana-Ekaristia (EYM).",
+  123              },
+
+  125                title: "Wakfu Binafsi",
+  126:               text: "Kwa wenye wito wa ukaribu na Moyo Mtakatifu wa Yesu. Hufanya agano rasmi na Kanisa, wakijiweka tayari kuhudumia familia ya Mtandao wa Sala na EYM.",
+  127              },
+
+  146        {/* CTA */}
+  147:       <NiaYaSalaCard
+  148:         title="Nia ya sala"
+  149:         description="Ungana nasi kwa kusoma au kudownload Nia ya sala"
+  150:         viewLink="/niazasala2026"
+  151:         pdfLink="/pdf/NIA ZA SALA ZA BABA MTAKATIFU 2026.pdf"
+  152        />
+
+app\niazasala2026\page.tsx:
+  80  
+  81: export default function NiaZaSalaPage() {
+  82    const [active, setActive] = useState<number | null>(null);
+
+  93            <h1 className="text-4xl md:text-5xl font-bold text-slate-800">
+  94:             Nia za Sala za Baba Mtakatifu – 2026
+  95            </h1>
+  96            <p className="mt-4 text-slate-600 max-w-2xl mx-auto">
+  97:             Nia za sala zilizokabidhiwa kwa mtandao wa sala wa Kanisa kwa mwaka
+  98              2026. Chagua mwezi kutafakari na kusali.
+
+app\warakawasala\page.tsx:
+   5  
+   6: export default function WarakaWaSalaPage() {
+   7    const current = warakaList.find(w => w.isCurrent)
+
+  14        <div className="text-center space-y-2">
+  15:         <h1 className="text-3xl font-bold">Waraka wa Sala</h1>
+  16          <p className="text-muted-foreground">
+  17:           Soma au pakua Waraka wa Sala wa kila mwezi
+  18          </p>
+
+components\ui\Aboutnetwork.tsx:
+   82          >
+   83:           Mtandao wa Sala wa Baba Mtakatifu Ulimwenguni
+   84          </motion.h2>
+
+   93          >
+   94:           Mtandao wa Sala wa Baba Mtakatifu Ulimwenguni ni Ushirika wa Kipapa (Pontifical Society)
+   95            unaolenga kuwahamasisha waamini Wakatoliki kote ulimwenguni kukabiliana na
+   96:           changamoto za ulimwengu na za Utume wa Kanisa kwa njia ya sala na matendo mema. Hii
+   97:           hufanyika kwa kuongozwa na Nia za Sala za Baba Mtakatifu anazotoa kila mwezi kwa Kanisa
+   98            lote.
+
+  108            >
+  109:             Utume huu ulianzishwa mwaka 1884 ukiwa unajulikana kama “Utume wa Sala”
+  110              (Apostleship of Prayer), ukiwa na lengo la kuwawezesha waamini kushiriki kikamilifu katika
+
+  120            >
+  121:             Kwa sasa jina rasmi ya utume huu ni Mtandao wa Sala wa Baba Mtakatifu Ulimwenguni, na
+  122              Njia ya Moyo (The Way of the Heart) ni utaratibu wake maalum wa malezi. Mtandao sasa
+
+components\ui\Cardslider.tsx:
+   9      description:
+  10:       "Angalia video ya Baba Mtakatifu akiongoza Nia ya Sala ya mwezi huu.",
+  11      image: "/popesvideologo.jpg",
+
+  17      description:
+  18:       "Jiunge katika huduma za sala, kushiriki matendo ya ibada na maombi ya kila siku.",
+  19      image: "/clicktopray.jpg",
+
+  24      description:
+  25:       "Ungana nasi kwa Sala ya Rosari kila siku na tafakari Nia za Papa.",
+  26      image: "/erosary.jpg",
+
+components\ui\DailyOfferingPrayer.tsx:
+  14          <p className="text-xl md:text-2xl font-bold text-amber-600">
+  15:           SALA YA MAJITOLEO YA KILA SIKU
+  16          </p>
+
+  53                <h2 className="text-2xl font-bold text-amber-600 mb-8 text-center">
+  54:                 SALA YA MAJITOLEO YA KILA SIKU
+  55                </h2>
+
+  77                    kwa kushirikiana na kaka na dada zangu
+  78:                   wa Mtandao huu wa Sala Ulimwenguni.
+  79                  </p>
+
+  87  
+  88:                   na kwa nia ya Sala ya Baba Mtakatifu [na Askofu wangu] kwa mwezi huu.
+  89  
+
+components\ui\Footer.tsx:
+    9    { name: "Karibu", href: "/" },
+   10:   { name: "Nia ya Sala", href: "/niayasala" },
+   11    { name: "Historia Yetu", href: "/historiayetu" },
+   12    { name: "EYM", href: "/eym" },
+   13:   { name: "Waraka Wa Sala", href: "/warakawasala" },
+   14    { name: "Mawasiliano", href: "/mawasiliano" },
+
+   55              <h3 className="text-2xl font-bold mb-4 leading-snug">
+   56:               Mtandao wa Sala wa Baba Mtakatifu Ulimwenguni
+   57              </h3>
+
+   59              <p className="text-white/70 leading-relaxed">
+   60:               Tunajenga jumuiya imara ya vijana kupitia sala, imani, na huduma.
+   61                Jukwaa hili linaunganisha watu na safari ya kiroho kwa njia ya kisasa.
+
+  120          <div className="mt-20 border-t border-white/20 pt-6 text-center text-white/50 text-sm">
+  121:           © {new Date().getFullYear()} Mtandao wa Sala wa Baba Mtakatifu Ulimwenguni.
+  122            Haki zote zimehifadhiwa.
+
+components\ui\Hero.tsx:
+  16      type: "motto", // 👈 first slide type
+  17:     headline: "Mtandao wa Sala wa Baba Mtakatifu Ulimwenguni",
+  18      mottos: ["USHIRIKA WA KIPAPA", "MTANDAO WA WANAOSALI", "MITUME PALE TULIPO"],
+
+  21      type: "normal",
+  22:     headline: "Nia ya Sala ya Baba Mtakatifu",
+  23      body: "Mwezi Januari 2026 — Kwa ajili ya kusali kwa kutumia Neno la Mungu",
+
+  27      headline: "Umoja wa Waamini",
+  28:     body: "Kuimarisha imani na mshikamano katika Kristo kwa njia ya sala ya pamoja",
+  29    },
+
+components\ui\Navbar.tsx:
+  33              {name:"Karibu",href:"/"},
+  34:             { name: "Nia ya Sala", href: "/niayasala" },
+  35              { name: "Historia Yetu", href: "/historiayetu" },
+  36              { name: "EYM", href: "/eym" },
+  37:             { name: "Waraka Wa Sala", href: "/warakawasala" },
+  38              { name: "Mawasiliano", href: "/mawasiliano" },
+
+  73                {[
+  74:             { name: "Nia ya Sala", href: "/niayasala" },
+  75              { name: "Historia Yetu", href: "/historiayetu" },
+
+components\ui\Niayasalacard.tsx:
+   6  
+   7: interface NiaYaSalaCardProps {
+   8    title: string
+
+  13  
+  14: export default function NiaYaSalaCard({
+  15    title,
+
+  18    pdfLink,
+  19: }: NiaYaSalaCardProps) {
+  20    return (
+
+components\ui\PrayerCards.tsx:
+   5  Jiweke katika hali ya ukimya:  Upo mahali patakatifu, unataka kuzungumza na Mungu aliye Mtakatifu sana.
+   6: 1.	Soma au jikumbushe akilini Nia ya Papa ya Mwezi huo.  Tambua kuwa Kanisa lililo Mwili wa Kristo linakuomba uifanye nia hiyo kuwa yako: Utamani yaliyomo yatendeke, ukusudie kuwa sehemu ya utekelezaji wake na umwombe Mungu akusaidie wewe, Baba Mtakatifu, wanamtandao wote wa Sala na wote wenye mapenzi mema wasaidie kuiishi nia hii.
+   7: 2.	Soma au jikumbushe sentensi kadhaa zilinazobeba Ujumbe wa Injili ya leo.  Mwombe Kristo akuwezeshe kuishi MAPENZI YA BABA yanayowekwa bayana katika Injili.  Omba mapenzi ya Baba yatimizwe kwa sala “Baba Yetu”.
+   8  3.	Fanya majitoleo yako ya kila siku.
+
+  11  
+  12: const afternoonContent = `KUSALI SALA YA MCHANA
+  13  Jiweke katika hali ya ukimya:  Upo katika muda mtakatifu, pamoja na Mwana wa Mungu aliye hai.
+  14  1.	Tambua kuwa Kristo, MWANA WA MUNGU yupo pamoja nawe katika maisha yako. Jikumbushe au tambua mwito ulio katika Injili ya leo.
+  15: 2.	Soma au Jikumbushe nia ya Sala ya Baba Mtakatifu mwezi huu, kisha:
+  16: Sali Sala ya Papa ya Mwezi huu kwa maneno ya Baba Mtakatifu (ikishindikana tumia maneno yako mwenyewe)
+  17: 3.	Mwombe MAMA MARIA, MALKIA WA MITUME awe nawe katika sala na maisha ya kuwa mtume wa Kristo Mwanaye: Sali:  Salamu Maria…
+  18  `;
+  19  
+  20: const eveningContent = `KUSALI SALA YA JIONI
+  21  Jiweke katika hali ya ukimya:  Ziweke pembeni sauti nyingi zisizo muhimu zinazokufikia.  Wewe ni Hekalu la Roho Mtakatifu.
+
+  50        <ModalCard
+  51:         title="KUSALI SALA YA MCHANA"
+  52          symbol={
+
+  66        <ModalCard
+  67:         title="KUSALI SALA YA JIONI"
+  68          symbol={
+
+components\ui\Section.tsx:
+  37    {
+  38:     text: `Mtandao wa Sala wa Baba Mtakatifu Ulimwenguni ni Ushirika wa Kipapa (Pontifical Society)
+  39             unaolenga kuwahamasisha waamini Wakatoliki kote ulimwenguni kukabiliana na
+  40:            changamoto za ulimwengu na za Utume wa Kanisa kwa njia ya sala na matendo mema. Hii
+  41:            hufanyika kwa kuongozwa na Nia za Sala za Baba Mtakatifu anazotoa kila mwezi kwa Kanisa
+  42             lote.`,
+
+  44    {
+  45:     text: `Utume huu ulianzishwa mwaka 1884 ukiwa unajulikana kama “Utume wa Sala”
+  46             (Apostleship of Prayer), ukiwa na lengo la kuwawezesha waamini kushiriki kikamilifu katika
+
+  52             mahali walipo” au “kuishi maisha ya ki-Ekaristi”. Walijitahidi kuishi kile walichomtolea
+  53:            Mungu pamoja na Kristo Mwanaye katika adhimisho la Misa. Mtume wa sala huwa mtume
+  54             wa Kristo katika familia yake, parokia yake, kazi yake, nchi yake nk.`,
+
+  57    {
+  58:     text: `Katika maisha ya kila siku Mtume wa Sala hujiweka karibu na Moyo wa Yesu. Hivyo basi
+  59             mikono yake, miguu yake, midomo yake, masikio yake nk kutumika kama vyombo vya Yesu
+
+  62    {
+  63:     text: `Kwa sasa jina rasmi ya utume huu ni Mtandao wa Sala wa Baba Mtakatifu Ulimwenguni, na
+  64             Njia ya Moyo (The Way of the Heart) ni utaratibu wake maalum wa malezi. Kwa sasa,
+
+  87            <h2 className="text-3xl md:text-4xl font-bold text-slate-800">
+  88:             Mtandao wa Sala wa Baba Mtakatifu Ulimwenguni
+  89            </h2>
+
+components\ui\Video.tsx:
+  43              <span className=" bg-amber-600 px-2 py-1 rounded-md ml-1 font-medium">
+  44:               Nia ya Sala ya Mwezi
+  45              </span>.
+  46:             Video hii inalenga kuwaunganisha waamini kote duniani katika Sala
+  47              moja, wakitafakari juu ya changamoto halisi za binadamu na utume wa Kanisa.
+
+  51              Kupitia ujumbe huu wa moja kwa moja kutoka kwa Papa, tunaunganishwa
+  52:             katika Sala ya kimataifa, tukihamasishwa kuishi Injili kwa vitendo na
+  53              kuchangia matumaini, amani, na mshikamano katika ulimwengu wetu.
+
+data\waraka.ts:
+  15      year: 2025,
+  16:     title: "Waraka wa Sala – December 2025",
+  17:     description: "Sala ya mwaka mpya",
+  18      pdfUrl: "/waraka/2026-01.pdf",
+
+  23      year: 2026,
+  24:     title: "Waraka wa Sala – januari 2026",
+  25      description: "Kwa ajili ya Kusali kwa kutumia Neno la Mungu",
+  26:     pdfUrl: "/pdf/Waraka wa Sala wa Mwezi Januari 2026.pdf",
+  27      isCurrent: true,
+
+  32      year: 2025,
+  33:     title: "Waraka wa Sala – November 2025",
+  34:     description: "Sala kwa vijana",
+  35      pdfUrl: "/waraka/2026-02.pdf",

@@ -37,7 +37,7 @@ const cards: Card[] = [
   {
     text: `Mtandao wa Sala wa Baba Mtakatifu Ulimwenguni ni Ushirika wa Kipapa (Pontifical Society)
            unaolenga kuwahamasisha waamini Wakatoliki kote ulimwenguni kukabiliana na
-           changamoto za ulimwengu na za Utume wa Kanisa kwa njia ya sala na matendo mema. Hii
+           changamoto za ulimwengu na za Utume wa Kanisa kwa njia ya Sala na matendo mema. Hii
            hufanyika kwa kuongozwa na Nia za Sala za Baba Mtakatifu anazotoa kila mwezi kwa Kanisa
            lote.`,
   },
@@ -50,7 +50,7 @@ const cards: Card[] = [
            siku pamoja na katika Ekaristi takatifu na kujitahidi kuishi Mapenzi ya Mungu wakiwa
            wanapewa nguvu na Ekaristi Takatifu. Maisha haya tunaweza kuyaita “kuwa wamisionari
            mahali walipo” au “kuishi maisha ya ki-Ekaristi”. Walijitahidi kuishi kile walichomtolea
-           Mungu pamoja na Kristo Mwanaye katika adhimisho la Misa. Mtume wa sala huwa mtume
+           Mungu pamoja na Kristo Mwanaye katika adhimisho la Misa. Mtume wa Sala huwa mtume
            wa Kristo katika familia yake, parokia yake, kazi yake, nchi yake nk.`,
     rightAlign: true,
   },

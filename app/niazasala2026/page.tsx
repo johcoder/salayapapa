@@ -94,7 +94,7 @@ export default function NiaZaSalaPage() {
             Nia za Sala za Baba Mtakatifu – 2026
           </h1>
           <p className="mt-4 text-slate-600 max-w-2xl mx-auto">
-            Nia za sala zilizokabidhiwa kwa mtandao wa sala wa Kanisa kwa mwaka
+            Nia za Sala zilizokabidhiwa kwa mtandao wa Sala wa Kanisa kwa mwaka
             2026. Chagua mwezi kutafakari na kusali.
           </p>
         </motion.div>

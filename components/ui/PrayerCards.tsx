@@ -4,7 +4,7 @@ import Image from "next/image";
 const morningContent = `KUSALI NA PAPA ASUBUHI:
 Jiweke katika hali ya ukimya:  Upo mahali patakatifu, unataka kuzungumza na Mungu aliye Mtakatifu sana.
 1.	Soma au jikumbushe akilini Nia ya Papa ya Mwezi huo.  Tambua kuwa Kanisa lililo Mwili wa Kristo linakuomba uifanye nia hiyo kuwa yako: Utamani yaliyomo yatendeke, ukusudie kuwa sehemu ya utekelezaji wake na umwombe Mungu akusaidie wewe, Baba Mtakatifu, wanamtandao wote wa Sala na wote wenye mapenzi mema wasaidie kuiishi nia hii.
-2.	Soma au jikumbushe sentensi kadhaa zilinazobeba Ujumbe wa Injili ya leo.  Mwombe Kristo akuwezeshe kuishi MAPENZI YA BABA yanayowekwa bayana katika Injili.  Omba mapenzi ya Baba yatimizwe kwa sala “Baba Yetu”.
+2.	Soma au jikumbushe sentensi kadhaa zilinazobeba Ujumbe wa Injili ya leo.  Mwombe Kristo akuwezeshe kuishi MAPENZI YA BABA yanayowekwa bayana katika Injili.  Omba mapenzi ya Baba yatimizwe kwa Sala “Baba Yetu”.
 3.	Fanya majitoleo yako ya kila siku.
 (hii iwe kati ya dakika 5 hadi 10, ikiwezekana iwe mbele ya Ekaristi Takatifu, au mara baada ya Misa)
 `;

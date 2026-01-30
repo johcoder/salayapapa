@@ -15,7 +15,7 @@ const cards = [
   {
     title: "Click to Pray Service",
     description:
-      "Jiunge katika huduma za sala, kushiriki matendo ya ibada na maombi ya kila siku.",
+      "Jiunge katika huduma za Sala, kushiriki matendo ya ibada na maombi ya kila siku.",
     image: "/clicktopray.jpg",
     link: "https://www.popesprayer.va/pray/#clicktopray",
   },

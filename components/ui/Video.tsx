@@ -49,7 +49,7 @@ export default function VideoYaPapaModal() {
 
           <p className="text-gray-200 leading-relaxed mb-6">
             Kupitia ujumbe huu wa moja kwa moja kutoka kwa Papa, tunaunganishwa
-            katika sala ya kimataifa, tukihamasishwa kuishi Injili kwa vitendo na
+            katika Sala ya kimataifa, tukihamasishwa kuishi Injili kwa vitendo na
             kuchangia matumaini, amani, na mshikamano katika ulimwengu wetu.
           </p>
         </motion.div>

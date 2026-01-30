@@ -25,7 +25,7 @@ export default function MtandaoWaSalaPage() {
           <p className="text-lg md:text-xl text-gray-200">
             Ushirika wa Kipapa unaowaunganisha Wakatoliki kote duniani
             kukabili changamoto za wanadamu na za utume wa Kanisa
-            kwa njia ya sala na matendo mema.
+            kwa njia ya Sala na matendo mema.
           </p>
         </motion.div>
       </section>
@@ -60,7 +60,7 @@ export default function MtandaoWaSalaPage() {
               Mtandao wa Sala wa Baba Mtakatifu ulianzishwa mwaka 1884 kama “Utume wa Sala”.
               Ulizaliwa kutokana na hamu ya waamini kushiriki kazi ya kimisionari,
               hata wale ambao hawangeweza kusafiri mbali. Suluhisho likawa ni kushiriki
-              utume huo kwa njia ya sala na kwa kuuishi vema Ukristo wao katika maisha ya kila siku.
+              utume huo kwa njia ya Sala na kwa kuuishi vema Ukristo wao katika maisha ya kila siku.
             </p>
             <p className="mt-4 leading-relaxed text-gray-700">
               Leo, utume huu upo katika nchi 92 na unaunganisha zaidi ya Wakatoliki milioni 22,
@@ -79,7 +79,7 @@ export default function MtandaoWaSalaPage() {
             <h3 className="text-xl font-semibold mb-2 text-amber-600">Ulimwengu Mmoja</h3>
             <p className="text-gray-700">
               Kutoka 1884 hadi leo, Mtandao wa Sala umekuwa daraja
-              linalowaunganisha waamini duniani kote kuwa sauti moja ya sala,
+              linalowaunganisha waamini duniani kote kuwa sauti moja ya Sala,
               mioyo iliyounganishwa kwa ajili ya Kristo na ulimwengu.
             </p>
           </motion.div>
@@ -92,11 +92,11 @@ export default function MtandaoWaSalaPage() {
           {[
             {
               title: "Jukumu Letu",
-              text: "Kutumia sala na matendo mema kama njia ya kukabiliana na changamoto za wanadamu na za utume wa Kanisa.",
+              text: "Kutumia Sala na matendo mema kama njia ya kukabiliana na changamoto za wanadamu na za utume wa Kanisa.",
             },
             {
               title: "Lengo Letu",
-              text: "Kuchangia katika kuutakatifuza ulimwengu kwa kuzisali na kuziishi nia za sala za Baba Mtakatifu.",
+              text: "Kuchangia katika kuutakatifuza ulimwengu kwa kuzisali na kuziishi nia za Sala za Baba Mtakatifu.",
             },
             {
               title: "Utume Wetu",

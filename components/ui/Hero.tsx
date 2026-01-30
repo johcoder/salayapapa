@@ -25,7 +25,7 @@ const slides = [
   {
     type: "normal",
     headline: "Umoja wa Waamini",
-    body: "Kuimarisha imani na mshikamano katika Kristo kwa njia ya sala ya pamoja",
+    body: "Kuimarisha imani na mshikamano katika Kristo kwa njia ya Sala ya pamoja",
   },
 ];
 
