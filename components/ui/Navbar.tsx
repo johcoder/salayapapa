@@ -12,25 +12,25 @@ import { Menu } from "lucide-react"
 
 export default function Navbar() {
   return (
-    <header className="sticky  top-0 z-50 border-b bg-white shadow-sm">
+    <header className="sticky top-0 z-50 border-b bg-white shadow-sm">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4">
 
-       {/* Logo */}
-<Link href="/" className="flex items-center h-full py-4">
-  <Image
-    src="/logo3.png"
-    alt="RMOP Tanzania Logo"
-    width={400}
-    height={130}
-    className="object-contain max-h-30"
-    priority
-  />
-</Link>
+        {/* Logo */}
+        <Link href="/" className="flex items-center h-full py-4">
+          <Image
+            src="/logo3.png"
+            alt="RMOP Tanzania Logo"
+            width={400}
+            height={130}
+            className="object-contain max-h-30"
+            priority
+          />
+        </Link>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-8">
           {[
-            {name:"Karibu",href:"/"},
+            { name: "Karibu", href: "/" },
             { name: "Nia ya Sala", href: "/niayasala" },
             { name: "Historia Yetu", href: "/historiayetu" },
             { name: "EYM", href: "/eym" },
@@ -49,10 +49,11 @@ export default function Navbar() {
           ))}
 
           <Button
+            asChild
             size="sm"
             className="bg-amber-600 text-white hover:bg-gray-800 transition-colors"
           >
-            Jiunge
+            <Link href="/subscribe">Jiunge</Link>
           </Button>
         </nav>
 
@@ -71,11 +72,11 @@ export default function Navbar() {
           <SheetContent side="right" className="bg-white">
             <nav className="mt-10 flex flex-col gap-6">
               {[
-            { name: "Nia ya Sala", href: "/niayasala" },
-            { name: "Historia Yetu", href: "/historiayetu" },
-            { name: "EYM", href: "/eym" },
-            { name: "Habari", href: "/Habari" },
-            { name: "Mawasiliano", href: "/contact" },
+                { name: "Nia ya Sala", href: "/niayasala" },
+                { name: "Historia Yetu", href: "/historiayetu" },
+                { name: "EYM", href: "/eym" },
+                { name: "Habari", href: "/Habari" },
+                { name: "Mawasiliano", href: "/contact" },
               ].map((item) => (
                 <Link
                   key={item.name}
@@ -86,8 +87,11 @@ export default function Navbar() {
                 </Link>
               ))}
 
-              <Button className="mt-4 bg-black text-white hover:bg-gray-800">
-                Jiunge
+              <Button
+                asChild
+                className="mt-4 bg-black text-white hover:bg-gray-800"
+              >
+                <Link href="/subscribe">Jiunge</Link>
               </Button>
             </nav>
           </SheetContent>

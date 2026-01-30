@@ -4,6 +4,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
+import { Button } from "@/components/ui/button";
 
 const links = [
   { name: "Karibu", href: "/" },
@@ -17,7 +18,7 @@ const links = [
 export default function Footer() {
   return (
     <footer className="relative overflow-hidden">
-      {/* Background Layer */}
+      {/* Background */}
       <div
         className="absolute inset-0 bg-black"
         style={{
@@ -38,7 +39,7 @@ export default function Footer() {
       >
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
 
-          {/* ================= Brand Card ================= */}
+          {/* Brand Card */}
           <motion.div
             whileHover={{ y: -6 }}
             transition={{ type: "spring", stiffness: 200 }}
@@ -52,7 +53,7 @@ export default function Footer() {
               className="object-contain mb-6"
             />
 
-            <h3 className="text-2xl font-bold mb-4 leading-snug">
+            <h3 className="text-2xl font-bold mb-4">
               Mtandao wa Sala wa Baba Mtakatifu Ulimwenguni
             </h3>
 
@@ -62,13 +63,13 @@ export default function Footer() {
             </p>
           </motion.div>
 
-          {/* ================= Links Card ================= */}
+          {/* Links Card */}
           <motion.div
             whileHover={{ y: -6 }}
             transition={{ type: "spring", stiffness: 200 }}
             className="rounded-2xl border border-amber-600/40 bg-black/40 backdrop-blur-md p-8"
           >
-            <h4 className="font-semibold mb-6 tracking-wide">Kurasa</h4>
+            <h4 className="font-semibold mb-6">Kurasa</h4>
 
             <ul className="space-y-4">
               {links.map((item) => (
@@ -76,21 +77,20 @@ export default function Footer() {
                   key={item.name}
                   whileHover={{ x: 10 }}
                   transition={{ type: "spring", stiffness: 300 }}
-                  className="group"
                 >
                   <Link
                     href={item.href}
-                    className="relative inline-block text-white/70 group-hover:text-white transition"
+                    className="relative inline-block text-white/70 hover:text-white transition"
                   >
                     {item.name}
-                    <span className="absolute left-0 -bottom-1 h-0.5 w-0 bg-amber-600 transition-all duration-300 group-hover:w-full" />
+                    <span className="absolute left-0 -bottom-1 h-0.5 w-0 bg-amber-600 transition-all duration-300 hover:w-full" />
                   </Link>
                 </motion.li>
               ))}
             </ul>
           </motion.div>
 
-          {/* ================= CTA Card ================= */}
+          {/* CTA Card */}
           <motion.div
             whileHover={{ y: -6 }}
             transition={{ type: "spring", stiffness: 200 }}
@@ -102,17 +102,21 @@ export default function Footer() {
               Kuwa sehemu ya imani na matumaini.
             </p>
 
-            <motion.button
+            {/* ✅ SAFE BUTTON (no nested buttons) */}
+            <motion.div
               whileHover={{
                 scale: 1.06,
                 boxShadow: "0px 0px 25px rgba(245, 158, 11, 0.6)",
               }}
               whileTap={{ scale: 0.95 }}
-              className="relative px-7 py-3 rounded-xl bg-amber-600 text-black font-semibold shadow-lg overflow-hidden"
             >
-              <span className="relative z-10">Jiunge</span>
-              <span className="absolute inset-0 bg-linear-to-r from-transparent via-white/30 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-500" />
-            </motion.button>
+              <Button
+                asChild
+                className="px-7 py-3 rounded-xl bg-amber-600 text-black font-semibold shadow-lg"
+              >
+                <Link href="/subscribe">Jiunge</Link>
+              </Button>
+            </motion.div>
           </motion.div>
         </div>
 
