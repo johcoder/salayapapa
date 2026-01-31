@@ -120,7 +120,7 @@ ulimwengu kupitia safari tunayoita “Njia ya Moyo.”
                 asChild
                 className="px-7 py-3 rounded-xl bg-amber-600 text-black font-semibold shadow-lg"
               >
-                <Link href="/subscribe">Jiunge</Link>
+                <Link href="/salinasi">Sali Nasi</Link>
               </Button>
             </motion.div>
           </motion.div>

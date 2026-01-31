@@ -18,7 +18,7 @@ const navLinks = [
   { name: "Nia ya Sala", href: "/niayasala" },
   { name: "Historia Yetu", href: "/historiayetu" },
   { name: "EYM", href: "/eym" },
-  { name: "Waraka Wa Sala", href: "/warakawasala" },
+  { name: "Sali Nasi", href: "/salinasi" },
   { name: "Mawasiliano", href: "/mawasiliano" },
 ]
 
