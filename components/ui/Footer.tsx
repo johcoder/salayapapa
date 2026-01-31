@@ -43,23 +43,29 @@ export default function Footer() {
           <motion.div
             whileHover={{ y: -6 }}
             transition={{ type: "spring", stiffness: 200 }}
-            className="rounded-2xl border border-amber-600/40 bg-black/40 backdrop-blur-md p-8"
+            className="rounded-2xl border border-amber-600/40 bg-black/40 backdrop-blur-md p-2"
           >
             <Image
-              src="/logo3.png"
+              src="/logotrans.png"
               alt="RMOP Tanzania Logo"
               width={400}
               height={130}
-              className="object-contain mb-6"
+              className="object-contain "
             />
 
-            <h3 className="text-2xl font-bold mb-4">
-              Mtandao wa Sala wa Baba Mtakatifu Ulimwenguni
+            <h3 className="text-2xl font-bold ">
+              Familia ya Kimataifa ya Sala
             </h3>
-
             <p className="text-white/70 leading-relaxed">
-              Tunajenga jumuiya imara ya vijana kupitia Sala, imani, na huduma.
-              Jukwaa hili linaunganisha watu na safari ya kiroho kwa njia ya kisasa.
+              Sisi ni Mtandao wa Sala wa Baba Mtakatifu Ulimwenguni, utume muhimu katika Kanisa.
+Lengo letu kwa maneno rahisi ni kusali na kukabiliana na changamoto zinazowakumba
+wabinadamu na Utume wa Kanisa, tukiongozwa na nia za kila mwezi za Baba Mtakatifu.
+            </p>
+            <p className="text-white/70 leading-relaxed">
+Kupitia sala, matendo mema na malezi ya kiroho, tunaunganisha mioyo ya watu wa mabara
+mbalimbali, tukikuzwa katika huruma ya Mungu na mshikamano. Hii ni zaidi ya kusali peke
+yake — utume huu ni wito wa kuishi Injili kila siku, kutakatifuza maisha yetu na ya
+ulimwengu kupitia safari tunayoita “Njia ya Moyo.”
             </p>
           </motion.div>
 
