@@ -10,6 +10,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRef, useState, useEffect } from "react";
 import CTAButton from "./CTAbutton";
+import MottoList from "./waraka/MottoList";
 
 const slides = [
   {
@@ -93,37 +94,9 @@ export default function Hero() {
 
             {/* FIRST SLIDE → ONLY MOTTOS */}
             {slides[index].type === "motto" && (
-              <motion.div
-                initial="hidden"
-                animate="visible"
-                variants={{
-                  visible: {
-                    transition: {
-                      staggerChildren: 0.25,
-                    },
-                  },
-                }}
-                className="flex flex-wrap justify-center gap-5 mt-6"
-              >
-                {slides[index].mottos!.map((motto) => (
-                  <motion.span
-                    key={motto}
-                    variants={{
-                      hidden: { opacity: 0, y: 25 },
-                      visible: { opacity: 1, y: 0 },
-                    }}
-                    whileHover={{ scale: 1.1, y: -3 }}
-                    transition={{ type: "spring", stiffness: 180 }}
-                    className="px-6 py-3 rounded-full
-                               bg-amber-600/95 text-black
-                               font-semibold tracking-wide
-                               shadow-xl cursor-default"
-                  >
-                    {motto}
-                  </motion.span>
-                ))}
-              </motion.div>
-            )}
+  <MottoList mottos={slides[index].mottos!} />
+)}
+
 
             {/* OTHER SLIDES → NORMAL BODY */}
             {slides[index].type === "normal" && (

@@ -3,12 +3,18 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { ChevronDownIcon } from "@heroicons/react/24/solid";
+import MottoList from "@/components/ui/waraka/MottoList";
 
 interface AccordionItem {
   title: string;
   content: string;
   pillars?: { title: string; description: string; color: string }[];
 }
+const eymMottos = [
+  "USHIRIKA WA KIPAPA",
+  "MTANDAO WA WANAOSALI",
+  "MITUME PALE TULIPO",
+];
 
 const accordionData: AccordionItem[] = [
   {
@@ -58,18 +64,32 @@ export default function EYMPage() {
   return (
     <section className="relative">
       {/* Hero Section */}
-      <div className="relative w-full h-[50vh] md:h-[60vh] lg:h-[80vh]">
-        <img
-          src="/eymlogo.jpg"
-          alt="EYM Hero"
-          className="absolute inset-0 w-full h-full object-cover object-center md:object-top"
-        />
-        <div className="absolute inset-0 bg-black/40 flex items-center justify-center px-4">
-          <h1 className="text-2xl md:text-5xl font-bold text-white align-text-bottom">
-           Vijana Wana-Ekaristia
-          </h1>
-        </div>
-      </div>
+      {/* Hero Section */}
+<div className="relative w-full h-[50vh] md:h-[60vh] lg:h-[80vh]">
+  <img
+    src="/eymlogo.jpg"
+    alt="EYM Hero"
+    className="absolute inset-0 w-full h-full object-cover object-center md:object-top"
+  />
+
+  {/* Dark Overlay */}
+  <div className="absolute inset-0 bg-black/55" />
+
+  {/* Centered Content */}
+  <div className="relative z-10 h-full flex flex-col items-center justify-center px-4 text-center text-white">
+    
+    {/* TITLE */}
+    <h1 className="text-2xl md:text-5xl font-bold mb-6">
+      Vijana Wana-Ekaristia
+    </h1>
+
+    {/* MOTTO LIST – ALWAYS VISIBLE & CENTERED */}
+    <div className="max-w-3xl">
+      <MottoList mottos={eymMottos} />
+    </div>
+  </div>
+</div>
+
 
       {/* Accordion */}
       <div className="max-w-4xl mx-auto mt-12 space-y-4 px-4">
