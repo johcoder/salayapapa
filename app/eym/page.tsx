@@ -4,6 +4,8 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { ChevronDownIcon } from "@heroicons/react/24/solid";
 import MottoList from "@/components/ui/waraka/MottoList";
+import MarafikiMezaYaKristo from "@/components/ui/MarafikiMezayaKristo";
+
 
 interface AccordionItem {
   title: string;
@@ -89,7 +91,7 @@ export default function EYMPage() {
     </div>
   </div>
 </div>
-
+<MarafikiMezaYaKristo />
 
       {/* Accordion */}
       <div className="max-w-4xl mx-auto mt-12 space-y-4 px-4">
