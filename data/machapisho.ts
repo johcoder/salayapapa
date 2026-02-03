@@ -15,9 +15,9 @@ id: 2,
   },
   {
     id: 3,
-    title: "Mwongozo wa Sala ya Familia",
+    title: "Mwongozo wa Kusali Kila Siku",
     category: "Mafundisho",
-    fileUrl: "/docs/sala-ya-familia.pdf",
+    fileUrl: "/pdf/MWONGOZO WA KUSALI KILA SIKU.pdf",
   },
 ]
 
