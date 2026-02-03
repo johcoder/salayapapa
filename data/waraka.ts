@@ -11,11 +11,12 @@ export type Waraka = {
 export const warakaList: Waraka[] = [
   {
     id:"1",
-    month: "December",
-    year: 2025,
-    title: "Waraka wa Sala – December 2025",
-    description: "Sala ya mwaka mpya",
-    pdfUrl: "/waraka/2026-01.pdf",
+    month: "Februari",
+    year: 2026,
+    title: "Waraka wa Sala – Februari 2026",
+    description: "Kwa ajili ya watoto wenye maradhi yasiyotibika",
+    pdfUrl: "/pdf/NIA ZA SALA ZA BABA MTAKATIFU 2026.pdf",
+    isCurrent: true
   },
   {
     id:"2",
@@ -24,7 +25,7 @@ export const warakaList: Waraka[] = [
     title: "Waraka wa Sala – Januari 2026",
     description: "Kwa ajili ya Kusali kwa kutumia Neno la Mungu",
     pdfUrl: "/pdf/Waraka wa Sala wa Mwezi Januari 2026.pdf",
-    isCurrent: true,
+    
   },
   {
     id:"3",
