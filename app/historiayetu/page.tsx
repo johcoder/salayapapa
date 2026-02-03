@@ -19,9 +19,10 @@ export default function MtandaoWaSalaPage() {
           transition={{ duration: 1 }}
           className="relative z-10 max-w-4xl text-center"
         >
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            Mtandao wa Sala wa Baba Mtakatifu Ulimwenguni.
+          <h1 className="text-4xl md:text-5xl font-bold mb-3">
+            Mtandao wa Sala wa Baba Mtakatifu Ulimwenguni
           </h1>
+          <h2 className="text-2xl">(Zamani Uliitwa Utume wa Sala)</h2>
         </motion.div>
       </section>
 
