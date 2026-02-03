@@ -77,7 +77,7 @@ export default function NiaZaSalaPage() {
       <section className="bg-gray-50 py-20 px-6 md:px-12">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold mb-10">
-            Jinsi ya Kuishi kama Mtume wa Sala
+             Kuishi Kama Mitume wa Sala
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

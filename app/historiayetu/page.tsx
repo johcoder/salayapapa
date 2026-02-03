@@ -22,11 +22,6 @@ export default function MtandaoWaSalaPage() {
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
             Mtandao wa Sala wa Baba Mtakatifu Ulimwenguni
           </h1>
-          <p className="text-lg md:text-xl text-gray-200">
-            Ushirika wa Kipapa unaowaunganisha Wakatoliki kote duniani
-            kukabili changamoto za wanadamu na za utume wa Kanisa
-            kwa njia ya Sala na matendo mema.
-          </p>
         </motion.div>
       </section>
 
@@ -38,7 +33,9 @@ export default function MtandaoWaSalaPage() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
           className="text-lg leading-relaxed text-gray-700"
-        >
+        >Ushirika wa Kipapa unaowaunganisha Wakatoliki kote duniani
+            kukabili changamoto za wanadamu na za utume wa Kanisa
+            kwa njia ya Sala na matendo mema.
           Changamoto hizi hutolewa kila mwezi kwa Kanisa lote kupitia
           <span className="font-semibold text-amber-600"> Nia za Sala za Baba Mtakatifu</span>.
           Kila Mkristo anaalikwa kuziombea na kuziishi kwa vitendo katika maisha ya kila siku,
@@ -55,7 +52,7 @@ export default function MtandaoWaSalaPage() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl font-bold mb-4 text-gray-900">Chimbuko</h2>
+            <h2 className="text-3xl font-bold mb-4 text-amber-600">Chimbuko</h2>
             <p className="leading-relaxed text-gray-700">
               Mtandao wa Sala wa Baba Mtakatifu ulianzishwa mwaka 1884 kama “Utume wa Sala”.
               Ulizaliwa kutokana na hamu ya waamini kushiriki kazi ya kimisionari,
