@@ -76,7 +76,6 @@ ulimwengu kupitia safari tunayoita “Njia ya Moyo.”
             className="rounded-2xl border border-amber-600/40 bg-black/40 backdrop-blur-md p-8"
           >
             <h4 className="font-semibold mb-6">Kurasa</h4>
-
             <ul className="space-y-4">
               {links.map((item) => (
                 <motion.li

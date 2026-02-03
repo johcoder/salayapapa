@@ -1,5 +1,9 @@
 import WarakaCard from "./WarakaCard";
 import { Waraka } from "@/data/waraka";
+import { machapishoList } from "@/data/machapisho"
+import MachapishoGrid from "@/components/ui/MachapishoGrid"
+import { Separator } from "../separator";
+
 
 type Props = {
   warakaList: Waraka[];
@@ -14,3 +18,4 @@ export default function WarakaGrid({ warakaList }: Props) {
     </div>
   );
 }
+

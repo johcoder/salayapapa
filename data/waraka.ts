@@ -21,7 +21,7 @@ export const warakaList: Waraka[] = [
     id:"2",
     month: "Januari",
     year: 2026,
-    title: "Waraka wa Sala – januari 2026",
+    title: "Waraka wa Sala – Januari 2026",
     description: "Kwa ajili ya Kusali kwa kutumia Neno la Mungu",
     pdfUrl: "/pdf/Waraka wa Sala wa Mwezi Januari 2026.pdf",
     isCurrent: true,
