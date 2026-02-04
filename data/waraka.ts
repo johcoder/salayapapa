@@ -15,7 +15,7 @@ export const warakaList: Waraka[] = [
     year: 2026,
     title: "Waraka wa Sala – Februari 2026",
     description: "Kwa ajili ya watoto wenye maradhi yasiyotibika",
-    pdfUrl: "/pdf/NIA ZA SALA ZA BABA MTAKATIFU 2026.pdf",
+    pdfUrl: "/pdf/Waraka wa Sala wa Mwezi Februari 2026.pdf",
     isCurrent: true
   },
   {
