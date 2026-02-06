@@ -13,9 +13,9 @@ interface AccordionItem {
   pillars?: { title: string; description: string; color: string }[];
 }
 const eymMottos = [
-  "USHIRIKA WA KIPAPA",
-  "MTANDAO WA WANAOSALI",
-  "MITUME PALE TULIPO",
+  "URAFIKI NA YESU",
+  "MAISHA NA YESU",
+  "USHIRIKA NA YESU",
 ];
 
 const accordionData: AccordionItem[] = [
@@ -78,7 +78,7 @@ export default function EYMPage() {
   <div className="absolute inset-0 bg-black/55" />
 
   {/* Centered Content */}
-  <div className="relative z-10 h-full flex flex-col items-center justify-center px-4 text-center text-white">
+  <div className="relative z-10 h-full flex flex-col items-center  px-4 text-center text-white">
     
     {/* TITLE */}
     <h1 className="text-2xl md:text-5xl font-bold mb-6">
@@ -86,7 +86,7 @@ export default function EYMPage() {
     </h1>
 
     {/* MOTTO LIST – ALWAYS VISIBLE & CENTERED */}
-    <div className="max-w-3xl">
+    <div className="max-w-3xl mt-0">
       <MottoList mottos={eymMottos} />
     </div>
   </div>

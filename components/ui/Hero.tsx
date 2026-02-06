@@ -21,7 +21,7 @@ const slides = [
   {
     type: "normal",
     headline: "Nia ya Sala ya Baba Mtakatifu",
-    body: "Mwezi Januari 2026 — Kwa ajili ya kusali kwa kutumia Neno la Mungu",
+    body: "Mwezi Februari 2026 — Kwa ajili ya kusali kwa kutumia Neno la Mungu",
   },
   {
     type: "normal",
