@@ -52,7 +52,7 @@ export default function PrayerCards() {
         symbol={
           <div className="w-20 h-20 relative">
             <Image
-              src="/mchana2.jpg"
+              src="/mchana3.jpg"
               alt="Afternoon Sun"
               fill
               className="object-contain"
