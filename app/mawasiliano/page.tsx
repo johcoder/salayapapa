@@ -80,8 +80,8 @@ export default function ContactPage() {
               </p>
             </div>
 
-            {/* UGANDA */}
-            <div className="rounded-2xl bg-white/10 p-6 backdrop-blur-sm sm:col-span-2">
+            {/* UGANDA 1 */}
+            <div className="rounded-2xl bg-white/10 p-6 backdrop-blur-sm">
               <h3 className="mb-3 flex items-center gap-2 text-xl font-bold text-white">
                 🇺🇬 UGANDA
               </h3>
@@ -98,16 +98,34 @@ export default function ContactPage() {
               </p>
             </div>
 
+            {/* UGANDA 2 */}
+            <div className="rounded-2xl bg-white/10 p-6 backdrop-blur-sm">
+              <h3 className="mb-3 flex items-center gap-2 text-xl font-bold text-white">
+                ET ETHIOPIA
+              </h3>
+              <p className="leading-relaxed text-amber-100">
+                <strong className="text-white">
+                  Biruktawit Assefa Kassa
+                </strong><br />
+                National Director of PWPN
+              </p>
+              <p className="mt-4 text-amber-100">
+                📧 biruktawitkassa@gmail.com<br />
+                📞 +251 911 430 310
+              </p>
+            </div>
+
           </div>
         </motion.div>
 
-        {/* RIGHT: FORM */}
+        {/* RIGHT: CONTACT FORM */}
         <motion.div
           initial={{ opacity: 0, x: 30 }}
           animate={{ opacity: 1, x: 0 }}
           className="rounded-2xl bg-white p-8 shadow-xl"
         >
           <div className="space-y-5">
+
             <div>
               <label className="text-sm font-medium text-slate-700">
                 Jina Kamili
@@ -160,6 +178,7 @@ export default function ContactPage() {
                 Tuma WhatsApp
               </Button>
             </div>
+
           </div>
         </motion.div>
 

@@ -1,7 +1,7 @@
 import ModalCard from "./ModelCard";
 import Image from "next/image";
 
-const morningContent = `KUSALI NA PAPA ASUBUHI:
+const morningContent = `
 Jiweke katika hali ya ukimya:  Upo mahali patakatifu, unataka kuzungumza na Mungu aliye Mtakatifu sana.
 1.	Soma au jikumbushe akilini Nia ya Papa ya Mwezi huo.  Tambua kuwa Kanisa lililo Mwili wa Kristo linakuomba uifanye nia hiyo kuwa yako: Utamani yaliyomo yatendeke, ukusudie kuwa sehemu ya utekelezaji wake na umwombe Mungu akusaidie wewe, Baba Mtakatifu, wanamtandao wote wa Sala na wote wenye mapenzi mema wasaidie kuiishi nia hii.
 2.	Soma au jikumbushe sentensi kadhaa zilinazobeba Ujumbe wa Injili ya leo.  Mwombe Kristo akuwezeshe kuishi MAPENZI YA BABA yanayowekwa bayana katika Injili.  Omba mapenzi ya Baba yatimizwe kwa Sala “Baba Yetu”.
@@ -9,7 +9,7 @@ Jiweke katika hali ya ukimya:  Upo mahali patakatifu, unataka kuzungumza na Mung
 (hii iwe kati ya dakika 5 hadi 10, ikiwezekana iwe mbele ya Ekaristi Takatifu, au mara baada ya Misa)
 `;
 
-const afternoonContent = `KUSALI SALA YA MCHANA
+const afternoonContent = `
 Jiweke katika hali ya ukimya:  Upo katika muda mtakatifu, pamoja na Mwana wa Mungu aliye hai.
 1.	Tambua kuwa Kristo, MWANA WA MUNGU yupo pamoja nawe katika maisha yako. Jikumbushe au tambua mwito ulio katika Injili ya leo.
 2.	Soma au Jikumbushe nia ya Sala ya Baba Mtakatifu mwezi huu, kisha:
@@ -17,7 +17,7 @@ Sali Sala ya Papa ya Mwezi huu kwa maneno ya Baba Mtakatifu (ikishindikana tumia
 3.	Mwombe MAMA MARIA, MALKIA WA MITUME awe nawe katika sala na maisha ya kuwa mtume wa Kristo Mwanaye: Sali:  Salamu Maria…
 `;
 
-const eveningContent = `KUSALI SALA YA JIONI
+const eveningContent = `
 Jiweke katika hali ya ukimya:  Ziweke pembeni sauti nyingi zisizo muhimu zinazokufikia.  Wewe ni Hekalu la Roho Mtakatifu.
 1.	Tambua kuwa umepewa zawadi ya ROHO MTAKATIFU aliye nawe kila wakati, na anayekuwezesha kuutazama ulimwengu kwa macho kama ya Kristo, macho ya huruma kwa ulimwengu.
 2.	Chunguza majitoleo yako:
