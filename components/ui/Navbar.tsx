@@ -38,13 +38,14 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/" className="flex items-center h-full">
           <Image
-            src="/logo3.png"
-            alt="RMOP Tanzania Logo"
-            width={420}
-            height={120}
-            priority
-            className="object-contain max-h-12"
-          />
+  src="/logo3.png"
+  alt="RMOP Tanzania Logo"
+  width={520}
+  height={180}
+  priority
+  className="object-contain h-14 w-auto"
+/>
+
         </Link>
 
         {/* Desktop Navigation */}
