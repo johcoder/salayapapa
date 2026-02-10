@@ -36,8 +36,8 @@ export default function ImageDescriptionSlider({ slides }: Props) {
           transition={{ duration: 0.5 }}
           className="flex flex-col md:flex-row items-center gap-6 p-8"
         >
-          {/* Image (smaller now) */}
-          <div className="relative w-40 h-40 md:w-48 md:h-48 shrink-0">
+          {/* Image (slightly larger) */}
+          <div className="relative w-56 h-56 md:w-64 md:h-64 shrink-0">
             <Image
               src={slides[index].image}
               alt="slider image"
@@ -46,12 +46,12 @@ export default function ImageDescriptionSlider({ slides }: Props) {
             />
           </div>
 
-          {/* Animated Description */}
+          {/* Animated Description (slightly larger font) */}
           <motion.p
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.4 }}
-            className="text-amber-600 text-4xl md:text-xl font-medium leading-relaxed text-center md:text-left"
+            className="text-amber-600 text-5xl md:text-2xl font-medium leading-relaxed text-center md:text-left"
           >
             {slides[index].description}
           </motion.p>
