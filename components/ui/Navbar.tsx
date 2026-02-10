@@ -40,8 +40,8 @@ export default function Navbar() {
           <Image
             src="/logo3.png"
             alt="RMOP Tanzania Logo"
-            width={300}
-            height={90}
+            width={420}
+            height={120}
             priority
             className="object-contain max-h-12"
           />

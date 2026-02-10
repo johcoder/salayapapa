@@ -25,50 +25,87 @@ export default function ContactPage() {
       `Habari RMOP Tanzania,\n\nJina: ${name}\nBarua pepe: ${email}\n\nUjumbe:\n${message}`
     );
 
-    // Replace with your real WhatsApp number (no +, no spaces)
     window.open(`https://wa.me/255754865401?text=${text}`, "_blank");
   };
 
   return (
-    <div className="min-h-screen bg-amber-600 px-4 py-16">
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-start">
+    <div className="min-h-screen bg-amber-600 px-4 py-20">
+      <div className="mx-auto max-w-6xl grid gap-14 md:grid-cols-2 items-start">
 
-        {/* Left: Info */}
+        {/* LEFT: CONTACT INFO */}
         <motion.div
-          initial={{ opacity: 0, x: -20 }}
+          initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
-          className="text-white"
         >
-          <h1 className="text-4xl font-bold">Mawasiliano</h1>
-          <p className="mt-4 leading-relaxed text-amber-100">
+          <h1 className="text-4xl font-bold text-white">Mawasiliano</h1>
+          <p className="mt-4 max-w-xl leading-relaxed text-amber-100">
             Tungependa kusikia kutoka kwako. Iwe ni swali, pendekezo,
             au hamu ya kujiunga nasi, tafadhali wasiliana nasi kupitia
             fomu hii au njia zilizo hapa chini.
           </p>
 
-          <div className="mt-8 space-y-4 text-amber-100">
-            <p>
-                <strong className="text-white">Fr. Leander J. Kabutta, SJ. <br />
-Eastern Africa Regional Director, <br />
-Pope’s Worldwide Prayer Network</strong> <br />
-              <strong className="text-white">St Francis Xavier Parish,
-               <br />P. O. Box 266 Mwanza, TANZANIA </strong>
-            </p>
-            <p>
-              <strong className="text-white">Simu:</strong> +255 7548 65401 <br />
-+255 7864 97690
-            </p>
-            <p>
-              <strong className="text-white">Barua pepe:</strong> info@rmoptanzania.org
-            </p>
+          {/* CONTACT CARDS */}
+          <div className="mt-10 grid gap-6 sm:grid-cols-2">
+
+            {/* TANZANIA */}
+            <div className="rounded-2xl bg-white/10 p-6 backdrop-blur-sm">
+              <h3 className="mb-3 flex items-center gap-2 text-xl font-bold text-white">
+                🇹🇿 TANZANIA
+              </h3>
+              <p className="leading-relaxed text-amber-100">
+                <strong className="text-white">
+                  Fr. Josephat Leander Kabutta, SJ
+                </strong><br />
+                Mkurugenzi wa Utume wa Sala Tanzania<br />
+                S. L. P. 266, Mwanza – TANZANIA
+              </p>
+              <p className="mt-4 text-amber-100">
+                📧 Popesprayer@aorjesuits.org<br />
+                📞 +255 754 865 401
+              </p>
+            </div>
+
+            {/* KENYA */}
+            <div className="rounded-2xl bg-white/10 p-6 backdrop-blur-sm">
+              <h3 className="mb-3 flex items-center gap-2 text-xl font-bold text-white">
+                🇰🇪 KENYA
+              </h3>
+              <p className="leading-relaxed text-amber-100">
+                <strong className="text-white">Fr. Jonas Keplimo</strong><br />
+                National Coordinator
+              </p>
+              <p className="mt-4 text-amber-100">
+                📧 omilpik@gmail.com<br />
+                📞 +254 733 343 488
+              </p>
+            </div>
+
+            {/* UGANDA */}
+            <div className="rounded-2xl bg-white/10 p-6 backdrop-blur-sm sm:col-span-2">
+              <h3 className="mb-3 flex items-center gap-2 text-xl font-bold text-white">
+                🇺🇬 UGANDA
+              </h3>
+              <p className="leading-relaxed text-amber-100">
+                <strong className="text-white">
+                  Br. Sseruga Noa Mawaggali FICP
+                </strong><br />
+                National Coordinator
+              </p>
+              <p className="mt-4 text-amber-100">
+                📧 nmsseru@gmail.com<br />
+                📞 +256 782 524 779<br />
+                📞 +256 703 581 048
+              </p>
+            </div>
+
           </div>
         </motion.div>
 
-        {/* Right: Form */}
+        {/* RIGHT: FORM */}
         <motion.div
-          initial={{ opacity: 0, x: 20 }}
+          initial={{ opacity: 0, x: 30 }}
           animate={{ opacity: 1, x: 0 }}
-          className="rounded-2xl bg-white p-8 shadow-lg"
+          className="rounded-2xl bg-white p-8 shadow-xl"
         >
           <div className="space-y-5">
             <div>
@@ -125,6 +162,7 @@ Pope’s Worldwide Prayer Network</strong> <br />
             </div>
           </div>
         </motion.div>
+
       </div>
     </div>
   );
