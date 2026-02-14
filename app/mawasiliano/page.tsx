@@ -98,11 +98,12 @@ export default function ContactPage() {
               </p>
             </div>
 
-            {/* UGANDA 2 */}
+            {/* ETHIOPIA */}
             <div className="rounded-2xl bg-white/10 p-6 backdrop-blur-sm">
               <h3 className="mb-3 flex items-center gap-2 text-xl font-bold text-white">
-                ET ETHIOPIA
-              </h3>
+  🇪🇹 ETHIOPIA
+</h3>
+
               <p className="leading-relaxed text-amber-100">
                 <strong className="text-white">
                   Biruktawit Assefa Kassa
