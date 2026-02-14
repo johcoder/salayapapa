@@ -96,7 +96,7 @@ export default function VideoYaPapaModal() {
 
                 <iframe
                   className="w-full h-full"
-                  src="https://youtu.be/-REFhEErYHA"
+                  src="https://www.youtube.com/embed/-REFhEErYHA"
                   title="Video ya Papa"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
