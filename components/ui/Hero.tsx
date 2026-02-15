@@ -60,8 +60,8 @@ export default function Hero() {
       {/* Parallax Background */}
       <motion.div style={{ y }} className="absolute inset-0 -z-10">
         <Image
-          src="/popepray.png"
-          alt="Hero Background"
+          src="/popepraysq.png"
+          alt="papa akisali"
           fill
           priority
           className="object-cover"
