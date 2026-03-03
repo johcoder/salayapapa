@@ -20,7 +20,7 @@ const slides = [
   {
     type: "normal",
     headline: "Nia ya Sala ya Baba Mtakatifu",
-    body: "Mwezi Februari 2026 — Kwa ajili ya watoto wenye maradhi yasiyotibika",
+    body: "Mwezi Machi 2026 — Kwa upokonyaji silaha na amani",
   },
   {
     type: "normal",

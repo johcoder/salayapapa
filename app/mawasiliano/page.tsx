@@ -50,7 +50,7 @@ export default function ContactPage() {
             {/* TANZANIA */}
             <div className="rounded-2xl bg-white/10 p-6 backdrop-blur-sm">
               <h3 className="mb-3 flex items-center gap-2 text-xl font-bold text-white">
-                🇹🇿 TANZANIA
+                <span className="text-2xl">🇹🇿</span> TANZANIA
               </h3>
               <p className="leading-relaxed text-amber-100">
                 <strong className="text-white">
@@ -68,7 +68,7 @@ export default function ContactPage() {
             {/* KENYA */}
             <div className="rounded-2xl bg-white/10 p-6 backdrop-blur-sm">
               <h3 className="mb-3 flex items-center gap-2 text-xl font-bold text-white">
-                🇰🇪 KENYA
+                <span className="text-2xl">🇰🇪</span> KENYA
               </h3>
               <p className="leading-relaxed text-amber-100">
                 <strong className="text-white">Fr. Jonas Keplimo</strong><br />
@@ -80,10 +80,10 @@ export default function ContactPage() {
               </p>
             </div>
 
-            {/* UGANDA 1 */}
+            {/* UGANDA */}
             <div className="rounded-2xl bg-white/10 p-6 backdrop-blur-sm">
               <h3 className="mb-3 flex items-center gap-2 text-xl font-bold text-white">
-                🇺🇬 UGANDA
+                <span className="text-2xl">🇺🇬</span> UGANDA
               </h3>
               <p className="leading-relaxed text-amber-100">
                 <strong className="text-white">
@@ -101,9 +101,8 @@ export default function ContactPage() {
             {/* ETHIOPIA */}
             <div className="rounded-2xl bg-white/10 p-6 backdrop-blur-sm">
               <h3 className="mb-3 flex items-center gap-2 text-xl font-bold text-white">
-  🇪🇹 ETHIOPIA
-</h3>
-
+                <span className="text-2xl">🇪🇹</span> ETHIOPIA
+              </h3>
               <p className="leading-relaxed text-amber-100">
                 <strong className="text-white">
                   Biruktawit Assefa Kassa
