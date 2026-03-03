@@ -92,44 +92,55 @@ export default function Navbar() {
           </SheetTrigger>
 
           <SheetContent
-            side="right"
-            className="bg-white bg-[url('/logo3.png')] bg-no-repeat bg-center bg-contain"
-          >
-            <SheetTitle className="sr-only">
-              Mobile Navigation Menu
-            </SheetTitle>
+  side="right"
+  className="relative w-full sm:max-w-sm bg-white overflow-hidden"
+>
+  {/* Centered Background Image */}
+  <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+    <Image
+      src="/logo3.png"
+      alt="Background Logo"
+      width={320}
+      height={160}
+      className="opacity-10 object-contain"
+    />
+  </div>
 
-            <nav className="mt-10 flex flex-col gap-5 text-base">
-              {navLinks.map((item) => {
-                const isActive = pathname === item.href
+  <SheetTitle className="sr-only">
+    Mobile Navigation Menu
+  </SheetTitle>
 
-                return (
-                  <Link
-                    key={item.name}
-                    href={item.href}
-                    onClick={handleLinkClick}
-                    className={`font-medium transition-colors
-                      ${
-                        isActive
-                          ? "text-amber-600 font-semibold"
-                          : "text-black hover:text-amber-600"
-                      }`}
-                  >
-                    {item.name}
-                  </Link>
-                )
-              })}
+  <nav className="relative mt-10 flex flex-col gap-5 text-sm z-10">
+    {navLinks.map((item) => {
+      const isActive = pathname === item.href
 
-              <Button
-                asChild
-                className="mt-6 bg-amber-600 text-white hover:bg-gray-800"
-              >
-                <Link href="/subscribe" onClick={handleLinkClick}>
-                  Jiunge
-                </Link>
-              </Button>
-            </nav>
-          </SheetContent>
+      return (
+        <Link
+          key={item.name}
+          href={item.href}
+          onClick={handleLinkClick}
+          className={`font-medium transition-colors
+            ${
+              isActive
+                ? "text-amber-600 font-semibold"
+                : "text-black hover:text-amber-600"
+            }`}
+        >
+          {item.name}
+        </Link>
+      )
+    })}
+
+    <Button
+      asChild
+      className="mt-6 bg-amber-600 text-white hover:bg-gray-800"
+    >
+      <Link href="/subscribe" onClick={handleLinkClick}>
+        Jiunge
+      </Link>
+    </Button>
+  </nav>
+</SheetContent>
         </Sheet>
       </div>
     </header>

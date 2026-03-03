@@ -7,14 +7,13 @@ import {
   AnimatePresence,
 } from "framer-motion";
 import Image from "next/image";
-import Link from "next/link";
 import { useRef, useState, useEffect } from "react";
 import CTAButton from "./CTAbutton";
 import MottoList from "./waraka/MottoList";
 
 const slides = [
   {
-    type: "motto", // 👈 first slide type
+    type: "motto",
     headline: "Mtandao wa Sala wa Baba Mtakatifu Ulimwenguni",
     mottos: ["USHIRIKA WA KIPAPA", "MTANDAO WA WANAOSALI", "MITUME PALE TULIPO"],
   },
@@ -35,7 +34,6 @@ export default function Hero() {
   const [index, setIndex] = useState(0);
   const [paused, setPaused] = useState(false);
 
-  // Auto slider
   useEffect(() => {
     if (paused) return;
     const interval = setInterval(() => {
@@ -44,34 +42,33 @@ export default function Hero() {
     return () => clearInterval(interval);
   }, [paused]);
 
-  // Parallax background
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["start start", "end start"],
   });
 
-  const y = useTransform(scrollYProgress, [0, 1], ["0%", "30%"]);
+  const y = useTransform(scrollYProgress, [0, 1], ["0%", "15%"]);
 
   return (
     <section
       ref={ref}
       className="relative h-[90vh] w-full flex items-center justify-center overflow-hidden"
     >
-      {/* Parallax Background */}
+      {/* Background Image - ONLY CHANGE ALIGNMENT */}
       <motion.div style={{ y }} className="absolute inset-0 -z-10">
         <Image
           src="/popepraysq.png"
           alt="papa akisali"
           fill
           priority
-          className="object-cover"
+          className="object-contain object-center md:object-left"
         />
       </motion.div>
 
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/30" />
 
-      {/* Slider */}
+      {/* Slider / Content */}
       <div
         className="relative z-10 w-full max-w-4xl px-6 text-center text-white"
         onMouseEnter={() => setPaused(true)}
@@ -84,21 +81,19 @@ export default function Hero() {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: -120 }}
             transition={{ duration: 0.9, ease: "easeInOut" }}
-            className="bg-black/35 backdrop-blur-md rounded-3xl
-                       shadow-2xl px-6 py-8 md:px-10 md:py-12"
+            className="bg-black/35 backdrop-blur-md rounded-3xl shadow-2xl px-6 py-8 md:px-10 md:py-12"
           >
-            {/* Headline (ALL SLIDES) */}
+            {/* Headline */}
             <h1 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">
               {slides[index].headline}
             </h1>
 
-            {/* FIRST SLIDE → ONLY MOTTOS */}
+            {/* Motto Slide */}
             {slides[index].type === "motto" && (
-  <MottoList mottos={slides[index].mottos!} />
-)}
+              <MottoList mottos={slides[index].mottos!} />
+            )}
 
-
-            {/* OTHER SLIDES → NORMAL BODY */}
+            {/* Normal Slide */}
             {slides[index].type === "normal" && (
               <p className="text-lg md:text-xl leading-relaxed md:leading-loose text-white/90">
                 {slides[index].body}
@@ -114,7 +109,10 @@ export default function Hero() {
           transition={{ delay: 0.6, duration: 0.5 }}
           className="flex justify-center mt-10"
         >
-          <CTAButton href={"https://www.popesprayer.va/praywiththepope/"} text={"Sali na Papa"} />
+          <CTAButton
+            href="https://www.popesprayer.va/praywiththepope/"
+            text="Sali na Papa"
+          />
         </motion.div>
       </div>
     </section>
