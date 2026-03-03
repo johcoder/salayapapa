@@ -38,14 +38,13 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/" className="flex items-center h-full">
           <Image
-  src="/logo3.png"
-  alt="RMOP Tanzania Logo"
-  width={520}
-  height={180}
-  priority
-  className="object-contain h-14 w-auto"
-/>
-
+            src="/logo3.png"
+            alt="RMOP Tanzania Logo"
+            width={520}
+            height={180}
+            priority
+            className="object-contain h-14 w-auto"
+          />
         </Link>
 
         {/* Desktop Navigation */}
@@ -92,12 +91,15 @@ export default function Navbar() {
             </Button>
           </SheetTrigger>
 
-          <SheetContent side="right" className="bg-white">
+          <SheetContent
+            side="right"
+            className="bg-white bg-[url('/logo3.png')] bg-no-repeat bg-center bg-contain"
+          >
             <SheetTitle className="sr-only">
               Mobile Navigation Menu
             </SheetTitle>
 
-            <nav className="mt-10 flex flex-col gap-6">
+            <nav className="mt-10 flex flex-col gap-5 text-base">
               {navLinks.map((item) => {
                 const isActive = pathname === item.href
 
@@ -106,7 +108,7 @@ export default function Navbar() {
                     key={item.name}
                     href={item.href}
                     onClick={handleLinkClick}
-                    className={`text-lg font-medium transition-colors
+                    className={`font-medium transition-colors
                       ${
                         isActive
                           ? "text-amber-600 font-semibold"
