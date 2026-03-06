@@ -48,7 +48,7 @@ export default function PrayerCards() {
 
       {/* Afternoon */}
       <ModalCard
-        title="KUSALI SALA YA MCHANA"
+        title="KUSALI NA PAPA MCHANA"
         symbol={
           <div className="w-20 h-20 relative">
             <Image
@@ -64,7 +64,7 @@ export default function PrayerCards() {
 
       {/* Evening */}
       <ModalCard
-        title="KUSALI SALA YA JIONI"
+        title="KUSALI NA PAPA JIONI"
         symbol={
           <div className="w-20 h-20 relative">
             <Image
