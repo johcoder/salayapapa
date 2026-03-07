@@ -54,7 +54,7 @@ export default function Hero() {
       ref={ref}
       className="relative h-[90vh] w-full flex items-center justify-center overflow-hidden"
     >
-      {/* Background Image - ONLY CHANGE ALIGNMENT */}
+      
       <motion.div style={{ y }} className="absolute inset-0 -z-10">
         <Image
           src="/popepraysq.png"
