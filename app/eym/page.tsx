@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { ChevronDownIcon } from "@heroicons/react/24/solid";
 import MottoList from "@/components/ui/waraka/MottoList";
 import MarafikiMezaYaKristo from "@/components/ui/MarafikiMezayaKristo";
-
+import CurrentWaraka from "@/components/ui/waraka/CurrentWaraka"
 
 interface AccordionItem {
   title: string;
@@ -147,6 +147,16 @@ export default function EYMPage() {
           </motion.div>
         ))}
       </div>
+      {/* Machapisho Section */}
+<div className="max-w-6xl mx-auto mt-20 px-4">
+
+  <h2 className="text-2xl md:text-3xl font-bold text-center mb-10">
+    Machapisho
+  </h2>
+
+  <CurrentWaraka />
+
+</div>
     </section>
   );
 }
