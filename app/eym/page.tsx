@@ -151,7 +151,7 @@ export default function EYMPage() {
 <div className="max-w-6xl mx-auto mt-20 px-4">
 
   <h2 className="text-2xl md:text-3xl font-bold text-center mb-10">
-    Machapisho
+    Machapisho ya Sala
   </h2>
 
   <CurrentWaraka />
