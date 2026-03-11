@@ -5,6 +5,7 @@ import CurrentWaraka from "@/components/ui/waraka/CurrentWaraka"
 import WarakaGrid from "@/components/ui/waraka/WarakaGrid"
 import { Separator } from "@/components/ui/separator"
 import KaribuPopup from "@/components/ui/KaribuPopUp"
+import Cardzasala from "@/components/ui/Cardzasala"
 
 export default function WarakaWaSalaPage() {
   const current = warakaList.find(w => w.isCurrent)
@@ -28,10 +29,8 @@ export default function WarakaWaSalaPage() {
         </div>
 
         {/* CURRENT */}
-        {current && <CurrentWaraka waraka={current} />}
-
+        <Cardzasala />
         <Separator />
-
         {/* PREVIOUS */}
         <div className="space-y-6">
           <h2 className="text-xl font-semibold">

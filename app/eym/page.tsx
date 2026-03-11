@@ -6,6 +6,7 @@ import { ChevronDownIcon } from "@heroicons/react/24/solid";
 import MottoList from "@/components/ui/waraka/MottoList";
 import MarafikiMezaYaKristo from "@/components/ui/MarafikiMezayaKristo";
 import CurrentWaraka from "@/components/ui/waraka/CurrentWaraka"
+import Cardzasala from "@/components/ui/Cardzasala";
 
 interface AccordionItem {
   title: string;
@@ -147,6 +148,7 @@ export default function EYMPage() {
           </motion.div>
         ))}
       </div>
+      <Cardzasala />
     </section>
   );
 }
