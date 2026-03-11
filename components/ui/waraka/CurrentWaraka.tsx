@@ -25,14 +25,14 @@ export default function CurrentWaraka({ waraka }: Props) {
           <Button asChild variant="outline">
             <a href={waraka.pdfUrl} target="_blank">
               <BookOpen className="mr-2 h-4 w-4" />
-              Open
+              Tazama
             </a>
           </Button>
 
           <Button asChild className="bg-amber-600 hover:bg-amber-700">
             <a href={waraka.pdfUrl} download>
               <Download className="mr-2 h-4 w-4" />
-              Download
+              Pakua
             </a>
           </Button>
 
