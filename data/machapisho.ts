@@ -1,5 +1,5 @@
-
 import { Machapisho } from "@/data/types/machapisho"
+
 export const machapishoList: Machapisho[] = [
   {
     id: 1,
@@ -7,14 +7,14 @@ export const machapishoList: Machapisho[] = [
     category: "Waraka",
     fileUrl: "/pdf/Prayer Letter for March 2026.pdf",
   },
-   {
+  {
     id: 2,
     title: "Prayer Letter for February 2026",
     category: "Waraka",
     fileUrl: "/pdf/Prayer Letter for February 2026.pdf",
   },
   {
-id: 3,
+    id: 3,
     title: "Prayer Letter for January 2026",
     category: "Waraka",
     fileUrl: "/pdf/Prayer Letter for January 2026.pdf",
@@ -26,4 +26,3 @@ id: 3,
     fileUrl: "/pdf/MWONGOZO WA KUSALI KILA SIKU.pdf",
   },
 ]
-
