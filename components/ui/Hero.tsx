@@ -2,12 +2,10 @@
 
 import {
   motion,
-  useScroll,
-  useTransform,
   AnimatePresence,
 } from "framer-motion";
 import Image from "next/image";
-import { useRef, useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import CTAButton from "./CTAbutton";
 import MottoList from "./waraka/MottoList";
 
@@ -15,7 +13,11 @@ const slides = [
   {
     type: "motto",
     headline: "Mtandao wa Sala wa Baba Mtakatifu Ulimwenguni",
-    mottos: ["USHIRIKA WA KIPAPA", "MTANDAO WA WANAOSALI", "MITUME PALE TULIPO"],
+    mottos: [
+      "USHIRIKA WA KIPAPA",
+      "MTANDAO WA WANAOSALI",
+      "MITUME PALE TULIPO",
+    ],
   },
   {
     type: "normal",
@@ -30,91 +32,85 @@ const slides = [
 ];
 
 export default function Hero() {
-  const ref = useRef<HTMLDivElement>(null);
   const [index, setIndex] = useState(0);
   const [paused, setPaused] = useState(false);
 
   useEffect(() => {
     if (paused) return;
+
     const interval = setInterval(() => {
       setIndex((prev) => (prev + 1) % slides.length);
     }, 6000);
+
     return () => clearInterval(interval);
   }, [paused]);
 
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["start start", "end start"],
-  });
-
-  const y = useTransform(scrollYProgress, [0, 1], ["0%", "15%"]);
-
   return (
-    <section
-      ref={ref}
-      className="relative h-[90vh] w-full flex items-center justify-center overflow-hidden"
-    >
-      
-      <motion.div style={{ y }} className="absolute inset-0 -z-10">
-        <Image
-          src="/popepraysq.png"
-          alt="papa akisali"
-          fill
-          priority
-          className="object-contain object-center md:object-left"
-        />
-      </motion.div>
+    <section className="w-full min-h-[90vh] grid md:grid-cols-[1fr_1.4fr]">
 
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-black/30" />
+      {/* LEFT SIDE IMAGE */}
+      <div className="relative w-full h-[50vh] md:h-full overflow-hidden">
+  <Image
+    src="/popepraysmile.png"
+    alt="Papa akisali"
+    fill
+    priority
+    className="object-cover object-center"
+  />
+</div>
 
-      {/* Slider / Content */}
+      {/* RIGHT SIDE CONTENT */}
       <div
-        className="relative z-10 w-full max-w-4xl px-6 text-center text-white"
+        className="flex items-center justify-center bg-white text-amber-600 px-6 md:px-12"
         onMouseEnter={() => setPaused(true)}
         onMouseLeave={() => setPaused(false)}
       >
-        <AnimatePresence mode="wait">
+        <div className="max-w-xl w-full text-center">
+
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, x: 120 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: -120 }}
+              transition={{ duration: 0.8 }}
+              className="bg-white border border-amber-600 rounded-3xl shadow-xl p-8"
+            >
+              {/* Headline */}
+              <h1 className="text-3xl md:text-4xl font-bold mb-6 leading-tight text-amber-600">
+                {slides[index].headline}
+              </h1>
+
+              {/* Motto slide */}
+              {slides[index].type === "motto" && (
+                <MottoList mottos={slides[index].mottos!} />
+              )}
+
+              {/* Normal slide */}
+              {slides[index].type === "normal" && (
+                <p className="text-lg md:text-xl text-amber-600 leading-relaxed">
+                  {slides[index].body}
+                </p>
+              )}
+            </motion.div>
+          </AnimatePresence>
+
+          {/* CTA Button */}
           <motion.div
-            key={index}
-            initial={{ opacity: 0, x: 120 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: -120 }}
-            transition={{ duration: 0.9, ease: "easeInOut" }}
-            className="bg-black/35 backdrop-blur-md rounded-3xl shadow-2xl px-6 py-8 md:px-10 md:py-12"
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 0.6 }}
+            className="mt-10 flex justify-center"
           >
-            {/* Headline */}
-            <h1 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">
-              {slides[index].headline}
-            </h1>
-
-            {/* Motto Slide */}
-            {slides[index].type === "motto" && (
-              <MottoList mottos={slides[index].mottos!} />
-            )}
-
-            {/* Normal Slide */}
-            {slides[index].type === "normal" && (
-              <p className="text-lg md:text-xl leading-relaxed md:leading-loose text-white/90">
-                {slides[index].body}
-              </p>
-            )}
+            <CTAButton
+              href="https://www.popesprayer.va/praywiththepope/"
+              text="Sali na Papa"
+            />
           </motion.div>
-        </AnimatePresence>
 
-        {/* CTA */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ delay: 0.6, duration: 0.5 }}
-          className="flex justify-center mt-10"
-        >
-          <CTAButton
-            href="https://www.popesprayer.va/praywiththepope/"
-            text="Sali na Papa"
-          />
-        </motion.div>
+        </div>
       </div>
+
     </section>
   );
 }
