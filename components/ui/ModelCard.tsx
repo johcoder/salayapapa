@@ -4,7 +4,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 interface ModalCardProps {
-  title: string;
+  title: React.ReactNode;
   symbol: React.ReactNode
   content: string;
 }

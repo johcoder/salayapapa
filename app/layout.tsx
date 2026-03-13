@@ -1,6 +1,7 @@
 import Footer from "@/components/ui/Footer"
 import Navbar from "@/components/ui/Navbar"
-import "./globals.css"
+
+import './globals.css';
 
 import type { Metadata } from "next";
 
@@ -38,7 +39,7 @@ export default async function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-white" suppressHydrationWarning>
+      <body className="bg-white " suppressHydrationWarning>
           <Navbar />
           <main>{children}</main>
           <Footer />

@@ -4,7 +4,7 @@ import Image from "next/image";
 const morningContent = `
 Jiweke katika hali ya ukimya:  Upo mahali patakatifu, unataka kuzungumza na Mungu aliye Mtakatifu sana.
 1.	Soma au jikumbushe akilini Nia ya Papa ya Mwezi huo.  Tambua kuwa Kanisa lililo Mwili wa Kristo linakuomba uifanye nia hiyo kuwa yako: Utamani yaliyomo yatendeke, ukusudie kuwa sehemu ya utekelezaji wake na umwombe Mungu akusaidie wewe, Baba Mtakatifu, wanamtandao wote wa Sala na wote wenye mapenzi mema wasaidie kuiishi nia hii.
-2.	Soma au jikumbushe sentensi kadhaa zilinazobeba Ujumbe wa Injili ya leo.  Mwombe Kristo akuwezeshe kuishi MAPENZI YA BABA yanayowekwa bayana katika Injili.  Omba mapenzi ya Baba yatimizwe kwa Sala “Baba Yetu”.
+2.	Soma au jikumbushe sentensi kadhaa zilinazobeba Ujumbe wa Injili ya leo.  Mwombe Kristo akuwezeshe kuishi MAPENZI YA BABA yanayowekwa bayana katika Injili.  Omba mapenzi ya Baba yatimizwe kwa Sala "Baba Yetu".
 3.	Fanya majitoleo yako ya kila siku.
 (hii iwe kati ya dakika 5 hadi 10, ikiwezekana iwe mbele ya Ekaristi Takatifu, au mara baada ya Misa)
 `;
@@ -21,26 +21,37 @@ const eveningContent = `
 Jiweke katika hali ya ukimya:  Ziweke pembeni sauti nyingi zisizo muhimu zinazokufikia.  Wewe ni Hekalu la Roho Mtakatifu.
 1.	Tambua kuwa umepewa zawadi ya ROHO MTAKATIFU aliye nawe kila wakati, na anayekuwezesha kuutazama ulimwengu kwa macho kama ya Kristo, macho ya huruma kwa ulimwengu.
 2.	Chunguza majitoleo yako:
-•	Ulimtolea Mungu yote, je ndivyo ilivyokuwa kiuhalishia au hata hukumkumbuka Mungu katika kunena na kutenda.
-•	Kuna mema uliyotenda, kusema au kuwaza, mshukuru Mungu, mwombe akudumishe katika mema.
-•	Kuna mabaya uliyotenda, kusema au kuwaza, mwombe Mungu msamaha.  Dhamiria kuomba msamaha kwa uliowakosea na kupata Sakramenti ya Upatanisho.
+- Ulimtolea Mungu yote, je ndivyo ilivyokuwa kiuhalishia au hata hukumkumbuka Mungu katika kunena na kutenda.
+- Kuna mema uliyotenda, kusema au kuwaza, mshukuru Mungu, mwombe akudumishe katika mema.
+- Kuna mabaya uliyotenda, kusema au kuwaza, mwombe Mungu msamaha.  Dhamiria kuomba msamaha kwa uliowakosea na kupata Sakramenti ya Upatanisho.
 3.	Mwombe Roho Mtakatifu akufunulie yale uwezayo kuyafanya vizuri zaidi kwa ajili ya upendo kwa watu na utukufu wa Mungu katika maisha yako ya kawaida kila siku.
 `;
+
+// Reusable styled time word component
+function StyledTimeWord({ word, colors }: { word: string; colors: string }) {
+  return (
+    <span
+      className={`bg-linear-to-r ${colors} bg-clip-text text-transparent font-extrabold tracking-widest text-2xl drop-shadow-sm`}
+    >
+      {word}
+    </span>
+  );
+}
 
 export default function PrayerCards() {
   return (
     <div className="flex flex-col md:flex-row gap-6 justify-center items-stretch py-16 px-4">
       {/* Morning */}
       <ModalCard
-        title="KUSALI NA PAPA ASUBUHI"
+        title={
+          <span className="flex flex-col items-center leading-tight">
+            <span className="text-base font-semibold tracking-widest uppercase">KUSALI NA PAPA</span>
+            <StyledTimeWord word="ASUBUHI" colors="from-orange-400 via-yellow-300 to-amber-500" />
+          </span>
+        }
         symbol={
           <div className="w-20 h-20 relative">
-            <Image
-              src="/sunrise.jpg"
-              alt="Morning Sunrise"
-              fill
-              className="object-contain"
-            />
+            <Image src="/sunrise.jpg" alt="Morning Sunrise" fill className="object-contain" />
           </div>
         }
         content={morningContent}
@@ -48,15 +59,15 @@ export default function PrayerCards() {
 
       {/* Afternoon */}
       <ModalCard
-        title="KUSALI NA PAPA MCHANA"
+        title={
+          <span className="flex flex-col items-center leading-tight">
+            <span className="text-base font-semibold tracking-widest uppercase">KUSALI NA PAPA</span>
+            <StyledTimeWord word="MCHANA" colors="from-yellow-400 via-amber-300 to-yellow-600" />
+          </span>
+        }
         symbol={
           <div className="w-20 h-20 relative">
-            <Image
-              src="/sunback.png"
-              alt="Afternoon Sun"
-              fill
-              className="object-contain"
-            />
+            <Image src="/sunback.png" alt="Afternoon Sun" fill className="object-contain" />
           </div>
         }
         content={afternoonContent}
@@ -64,15 +75,15 @@ export default function PrayerCards() {
 
       {/* Evening */}
       <ModalCard
-        title="KUSALI NA PAPA JIONI"
+        title={
+          <span className="flex flex-col items-center leading-tight">
+            <span className="text-base font-semibold tracking-widest uppercase">KUSALI NA PAPA</span>
+            <StyledTimeWord word="JIONI" colors="from-purple-400 via-indigo-400 to-blue-500" />
+          </span>
+        }
         symbol={
           <div className="w-20 h-20 relative">
-            <Image
-              src="/sunset.jpg"
-              alt="Evening Moon"
-              fill
-              className="object-contain"
-            />
+            <Image src="/sunset.jpg" alt="Evening Moon" fill className="object-contain" />
           </div>
         }
         content={eveningContent}
@@ -80,4 +91,3 @@ export default function PrayerCards() {
     </div>
   );
 }
-
