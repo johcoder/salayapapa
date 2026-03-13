@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server"
-import { createAdminClient } from "@/utils/superbase/server-admin"
-const supabase = createAdminClient()
+import { createClient } from "@/utils/supabase/client"
+const supabase = createClient()
 
 export async function POST(req: NextRequest) {
   try {
@@ -16,7 +16,7 @@ export async function POST(req: NextRequest) {
     }
 
     // Fetch all active subscribers from Supabase
-    const supabase = createAdminClient()
+    const supabase = createClient()
     const { data: subscribers, error } = await supabase
       .from("subscribers")
       .select("email, name")

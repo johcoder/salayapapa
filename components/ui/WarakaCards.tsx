@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react"
 import CurrentWaraka from "./waraka/CurrentWaraka"
-import { createClient, type Waraka } from "@/utils/superbase/client"
+import { createClient, type Waraka } from "@/utils/supabase/client"
 
 export default function WarakaCards() {
   const [warakaList, setWarakaList] = useState<Waraka[]>([])

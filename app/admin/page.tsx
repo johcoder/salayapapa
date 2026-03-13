@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
-import { createClient } from "@/utils/superbase/client"
+import { createClient } from "@/utils/supabase/client"
 import LogoutButton from "@/components/ui/LogoutButton"
 
 // ─── Types ───────────────────────────────────────────────

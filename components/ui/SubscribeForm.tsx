@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
-import { createClient } from "@/utils/superbase/client"
+import { createClient } from "@/utils/supabase/client"
 
 export default function SubscribeForm() {
   const [email, setEmail] = useState("")
