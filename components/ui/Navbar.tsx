@@ -20,7 +20,9 @@ const navLinks = [
   { name: "Historia Yetu", href: "/historiayetu" },
   { name: "EYM", href: "/eym" },
   { name: "Sali Nasi", href: "/salinasi" },
+  { name: "Team", href: "/Team" },
   { name: "Mawasiliano", href: "/mawasiliano" },
+  
 ]
 
 export default function Navbar() {

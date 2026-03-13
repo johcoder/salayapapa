@@ -6,6 +6,7 @@ import WarakaGrid from "@/components/ui/waraka/WarakaGrid"
 import { Separator } from "@/components/ui/separator"
 import KaribuPopup from "@/components/ui/KaribuPopUp"
 import Cardzasala from "@/components/ui/Cardzasala"
+import WarakaCards from "@/components/ui/WarakaCards"
 
 export default function WarakaWaSalaPage() {
   const current = warakaList.find(w => w.isCurrent)
@@ -29,7 +30,7 @@ export default function WarakaWaSalaPage() {
         </div>
 
         {/* CURRENT */}
-        <Cardzasala />
+        <WarakaCards/>
         <Separator />
         {/* PREVIOUS */}
         <div className="space-y-6">

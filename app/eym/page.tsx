@@ -7,6 +7,7 @@ import MottoList from "@/components/ui/waraka/MottoList";
 import MarafikiMezaYaKristo from "@/components/ui/MarafikiMezayaKristo";
 import CurrentWaraka from "@/components/ui/waraka/CurrentWaraka"
 import Cardzasala from "@/components/ui/Cardzasala";
+import WarakaCards from "@/components/ui/Cardzasala";
 
 interface AccordionItem {
   title: string;
@@ -148,7 +149,7 @@ export default function EYMPage() {
           </motion.div>
         ))}
       </div>
-      <Cardzasala />
+      <WarakaCards />
     </section>
   );
 }
