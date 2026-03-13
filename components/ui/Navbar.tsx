@@ -122,8 +122,9 @@ export default function Navbar() {
               <Button
                 asChild
                 className="mt-6 bg-amber-600 text-white hover:bg-gray-800"
+                suppressHydrationWarning
               >
-                <Link href="/subscribe" onClick={handleLinkClick}>
+                <Link href="/" onClick={handleLinkClick}>
                   Jiunge
                 </Link>
               </Button>
