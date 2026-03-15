@@ -39,7 +39,7 @@ export default async function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-white " suppressHydrationWarning>
+      <body className="bg-white font-din font-bold" suppressHydrationWarning>
           <Navbar />
           <main>{children}</main>
           <Footer />

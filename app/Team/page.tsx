@@ -198,7 +198,7 @@ export default function TeamPage() {
             Je, unataka kujiunga na timu yetu ya sala? Wasiliana nasi leo.
           </p>
           <a
-            href="/contact"
+            href="/mawasiliano"
             className="inline-block mt-6 px-8 py-3 bg-amber-600 hover:bg-amber-500 text-white font-semibold rounded-xl tracking-wide transition-all duration-300 shadow-md hover:shadow-amber-300/50 hover:shadow-lg"
             style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}
           >
