@@ -12,7 +12,7 @@ export default function ContactPage() {
   const [message, setMessage] = useState("");
 
   const handleEmail = () => {
-    const subject = encodeURIComponent("Ujumbe kutoka RMOP Website");
+    const subject = encodeURIComponent("Habari mtandao wa sala");
     const body = encodeURIComponent(
       `Jina: ${name}\nBarua pepe: ${email}\n\nUjumbe:\n${message}`
     );

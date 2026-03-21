@@ -16,41 +16,34 @@ const teamMembers: TeamMember[] = [
     name: "Fr Cristobal Fones",
     role: "",
     image: "/team/team2.png",
-    bio: "Mkurugenzi wa Kimataifa",
+    bio: "Mkurugenzi wa Kimataifa ",
   },
+
   {
     name: "Fr Grant Tungay",
     role: "",
     image: "/team/grant.png",
-    bio: "Msaidizi wa Mratibu wa utume, nchi zinazozungumza Kiingereza",
+    bio: "Msaidizi wa Mratibu wa utume ,nchi zinazozungumza Kiingereza",
   },
+
   {
     name: "Valter Casamano",
     role: "",
     image: "/team/team4.png",
-    bio: "Mratibu wa Utume, Afrika",
+    bio: "Mratibu wa Utume,Afrika",
   },
-  {
+   {
     name: "Fr. Leander Kabutta",
     role: "",
     image: "/team/team3.png",
-    bio: "Mratibu Mtandao wa Sala, Nchi za Mashariki ya Afrika",
+    bio: "Mratibu Mtandao wa Sala ,Nchi za Mashariki ya Afrika ",
   },
 ];
 
-function TeamCard({
-  member,
-  variants,
-}: {
-  member: TeamMember;
-  variants: Variants;
-}) {
+// Separate component so each card has its own error state
+function TeamCard({ member, variants }: { member: TeamMember; variants: Variants }) {
   const [imgError, setImgError] = useState(false);
-  const initials = member.name
-    .split(" ")
-    .map((n) => n[0])
-    .join("")
-    .slice(0, 2);
+  const initials = member.name.split(" ").map((n) => n[0]).join("").slice(0, 2);
 
   return (
     <motion.div
@@ -58,13 +51,12 @@ function TeamCard({
       whileHover={{ y: -6, transition: { duration: 0.3 } }}
       className="group flex flex-col items-center text-center"
     >
-      {/* ── Fixed-size image block ── */}
-      <div className="relative mb-5 flex-shrink-0">
-        {/* Outer ring — fixed 144 × 144 */}
+      <div className="relative mb-5">
         <div className="w-36 h-36 rounded-full overflow-hidden ring-4 ring-amber-200 ring-offset-4 ring-offset-[#fdf8f0] shadow-lg group-hover:ring-amber-400 transition-all duration-300">
           {imgError ? (
+            // Only show initials if image actually failed
             <div
-              className="w-full h-full flex items-center justify-center bg-gradient-to-br from-amber-100 to-amber-200 text-amber-800 text-2xl font-bold"
+              className="w-full h-full flex items-center justify-center bg-linear-to-br from-amber-100 to-amber-200 text-amber-800 text-2xl font-bold"
               style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}
             >
               {initials}
@@ -83,29 +75,22 @@ function TeamCard({
         <div className="absolute bottom-1 right-1 w-4 h-4 rounded-full bg-amber-500 border-2 border-[#fdf8f0] shadow-sm" />
       </div>
 
-      {/* ── Text block: flex-col + fixed min-height keeps all cards aligned ── */}
-      <div className="flex flex-col items-center w-full min-h-[120px]">
-        <h3
-          className="text-xl font-bold text-stone-800 mb-1 group-hover:text-amber-700 transition-colors duration-300 leading-snug"
-          style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}
-        >
-          {member.name}
-        </h3>
+      <h3
+        className="text-xl font-bold text-stone-800 mb-1 group-hover:text-amber-700 transition-colors duration-300"
+        style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}
+      >
+        {member.name}
+      </h3>
 
-        {/* Role badge — always rendered so spacing is consistent */}
-        <span className="inline-block px-3 py-1 text-xs font-semibold tracking-widest uppercase text-amber-700 bg-amber-100 rounded-full mb-3 min-h-[24px]">
-          {member.role}
-        </span>
+      <span className="inline-block px-3 py-1 text-xs font-semibold tracking-widest uppercase text-amber-700 bg-amber-100 rounded-full mb-3">
+        {member.role}
+      </span>
 
-        {/* Bio — fixed height with overflow hidden keeps card height uniform */}
-        <div className="h-[56px] flex items-start justify-center overflow-hidden">
-          {member.bio && (
-            <p className="text-stone-500 text-sm leading-relaxed text-center px-2 line-clamp-3">
-              {member.bio}
-            </p>
-          )}
-        </div>
-      </div>
+      {member.bio && (
+        <p className="text-stone-500 text-sm leading-relaxed max-w-50">
+          {member.bio}
+        </p>
+      )}
     </motion.div>
   );
 }
@@ -117,11 +102,7 @@ const containerVariants = {
 
 const cardVariants: Variants = {
   hidden: { opacity: 0, y: 40 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.6, ease: "easeOut" as const },
-  },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" as const } },
 };
 
 export default function Team() {
@@ -135,16 +116,12 @@ export default function Team() {
       />
 
       <div className="text-center mb-16 relative z-10">
-        <p
-          className="text-amber-600 uppercase tracking-[0.3em] text-sm font-semibold mb-3"
-          style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}
-        >
+        <p className="text-amber-600 uppercase tracking-[0.3em] text-sm font-semibold mb-3"
+          style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
           Watu Wetu
         </p>
-        <h2
-          className="text-5xl font-bold text-stone-800 leading-tight"
-          style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}
-        >
+        <h2 className="text-5xl font-bold text-stone-800 leading-tight"
+          style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
           Timu Yetu
         </h2>
         <div className="flex items-center justify-center gap-3 mt-5">
