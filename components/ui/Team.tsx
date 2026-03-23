@@ -59,12 +59,12 @@ function TeamCard({
       className="group flex flex-col items-center text-center"
     >
       {/* ── Fixed-size image block ── */}
-      <div className="relative mb-5 flex-shrink-0">
+      <div className="relative mb-5 shrink-0">
         {/* Outer ring — fixed 144 × 144 */}
         <div className="w-36 h-36 rounded-full overflow-hidden ring-4 ring-amber-200 ring-offset-4 ring-offset-[#fdf8f0] shadow-lg group-hover:ring-amber-400 transition-all duration-300">
           {imgError ? (
             <div
-              className="w-full h-full flex items-center justify-center bg-gradient-to-br from-amber-100 to-amber-200 text-amber-800 text-2xl font-bold"
+              className="w-full h-full flex items-center justify-center bg-linear-to-br from-amber-100 to-amber-200 text-amber-800 text-2xl font-bold"
               style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}
             >
               {initials}
@@ -84,7 +84,7 @@ function TeamCard({
       </div>
 
       {/* ── Text block: flex-col + fixed min-height keeps all cards aligned ── */}
-      <div className="flex flex-col items-center w-full min-h-[120px]">
+      <div className="flex flex-col items-center w-full min-h-30">
         <h3
           className="text-xl font-bold text-stone-800 mb-1 group-hover:text-amber-700 transition-colors duration-300 leading-snug"
           style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}
@@ -93,12 +93,12 @@ function TeamCard({
         </h3>
 
         {/* Role badge — always rendered so spacing is consistent */}
-        <span className="inline-block px-3 py-1 text-xs font-semibold tracking-widest uppercase text-amber-700 bg-amber-100 rounded-full mb-3 min-h-[24px]">
+        <span className="inline-block px-3 py-1 text-xs font-semibold tracking-widest uppercase text-amber-700 bg-amber-100 rounded-full mb-3 min-h-6">
           {member.role}
         </span>
 
         {/* Bio — fixed height with overflow hidden keeps card height uniform */}
-        <div className="h-[56px] flex items-start justify-center overflow-hidden">
+        <div className="h-14 flex items-start justify-center overflow-hidden">
           {member.bio && (
             <p className="text-stone-500 text-sm leading-relaxed text-center px-2 line-clamp-3">
               {member.bio}
