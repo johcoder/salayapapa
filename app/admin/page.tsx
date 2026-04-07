@@ -106,28 +106,47 @@ export default function AdminDashboard() {
   }
 
   // ── Waraka actions ──
-  async function handleWarakaSubmit(e: React.FormEvent) {
-    e.preventDefault()
-    if (!wFile) { setWMsg({ type: "error", text: "Chagua faili la PDF." }); return }
-    setWSubmitting(true); setWMsg(null)
-    try {
-      const fileName = `${Date.now()}-${wFile.name.replace(/\s+/g, "-")}`
-      const { error: upErr } = await supabase.storage.from("waraka-pdfs").upload(fileName, wFile, { contentType: "application/pdf" })
-      if (upErr) throw upErr
-      const { data: urlData } = supabase.storage.from("waraka-pdfs").getPublicUrl(fileName)
-      const { error: insErr } = await supabase.from("waraka").insert({
-        title: wTitle, month: wMonth, year: wYear,
-        description: wDesc, language: wLang,
-        pdf_url: urlData.publicUrl, is_active: true,
-      })
-      if (insErr) throw insErr
-      setWMsg({ type: "success", text: "Waraka umehifadhiwa!" })
-      setWTitle(""); setWDesc(""); setWFile(null)
-      fetchAll()
-    } catch (err: unknown) {
-      setWMsg({ type: "error", text: err instanceof Error ? err.message : "Hitilafu imetokea." })
-    } finally { setWSubmitting(false) }
+ async function handleWarakaSubmit(e: React.FormEvent) {
+  e.preventDefault()
+  if (!wFile) { setWMsg({ type: "error", text: "Chagua faili la PDF." }); return }
+  setWSubmitting(true); setWMsg(null)
+
+  try {
+    // ── Step 1: Upload PDF via secure API route ──
+    const formData = new FormData()
+    formData.append("file", wFile)
+
+    const uploadRes = await fetch("/api/admin/upload-pdf", {
+      method: "POST",
+      body: formData,
+      // ✅ Cookie is sent automatically — no headers needed
+    })
+
+    const uploadData = await uploadRes.json()
+    if (!uploadRes.ok) throw new Error(uploadData.error || "Upload imeshindwa.")
+
+    // ── Step 2: Insert waraka row using the returned URL ──
+    const { error: insErr } = await supabase.from("waraka").insert({
+      title: wTitle,
+      month: wMonth,
+      year: wYear,
+      description: wDesc,
+      language: wLang,
+      pdf_url: uploadData.url,
+      is_active: true,
+    })
+    if (insErr) throw insErr
+
+    setWMsg({ type: "success", text: "Waraka umehifadhiwa!" })
+    setWTitle(""); setWDesc(""); setWFile(null)
+    fetchAll()
+
+  } catch (err: unknown) {
+    setWMsg({ type: "error", text: err instanceof Error ? err.message : "Hitilafu imetokea." })
+  } finally {
+    setWSubmitting(false)
   }
+}
 
   async function toggleWaraka(item: Waraka) {
     await supabase.from("waraka").update({ is_active: !item.is_active }).eq("id", item.id)
