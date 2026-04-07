@@ -106,26 +106,34 @@ export default function AdminDashboard() {
   }
 
   // ── Waraka actions ──
- async function handleWarakaSubmit(e: React.FormEvent) {
+async function handleWarakaSubmit(e: React.FormEvent) {
   e.preventDefault()
   if (!wFile) { setWMsg({ type: "error", text: "Chagua faili la PDF." }); return }
   setWSubmitting(true); setWMsg(null)
 
   try {
-    // ── Step 1: Upload PDF via secure API route ──
+    // ── Step 1: Upload PDF via API route (bypasses RLS) ──
     const formData = new FormData()
     formData.append("file", wFile)
 
     const uploadRes = await fetch("/api/admin/upload-pdf", {
       method: "POST",
       body: formData,
-      // ✅ Cookie is sent automatically — no headers needed
     })
 
-    const uploadData = await uploadRes.json()
+    // Read as text first to avoid JSON parse crash
+    const rawText = await uploadRes.text()
+    let uploadData: { url?: string; error?: string }
+    try {
+      uploadData = JSON.parse(rawText)
+    } catch {
+      console.error("Server returned non-JSON:", rawText)
+      throw new Error("Seva ilirudisha jibu baya. Angalia console.")
+    }
+
     if (!uploadRes.ok) throw new Error(uploadData.error || "Upload imeshindwa.")
 
-    // ── Step 2: Insert waraka row using the returned URL ──
+    // ── Step 2: Insert waraka row ──
     const { error: insErr } = await supabase.from("waraka").insert({
       title: wTitle,
       month: wMonth,
